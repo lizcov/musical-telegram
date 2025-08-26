@@ -1,0 +1,136 @@
+>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazel Climate App | Liz Covington</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+        }
+        .case-study-container {
+            max-width: 960px;
+        }
+        .section-header {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        .project-image-placeholder {
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Project Header -->
+    <header class="bg-white py-12 md:py-16">
+        <div class="case-study-container mx-auto px-4">
+            <nav class="mb-8">
+                <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">
+                    ← Back to Projects
+                </a>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hazel: Gamifying Carbon Removal</h1>
+            <p class="text-xl text-gray-600 max-w-2xl">
+                A case study on building a user community and a feedback loop for a mobile climate change game.
+            </p>
+        </div>
+    </header>
+
+    <main class="case-study-container mx-auto px-4 py-12 md:py-16">
+        
+        <!-- Project Details Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div>
+                <h3 class="font-bold text-gray-900 mb-2">My Role</h3>
+                <p>Community Development Manager, UX/UI Designer</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 mb-2">My Contributions</h3>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>User Research & Feedback Management</li>
+                    <li>Community Building (Twitter & Discord)</li>
+                    <li>Low-Fi Mockups & Prototyping</li>
+                    <li>Graphic & Social Media Design</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 mb-2">Team</h3>
+                <p>CEO, Technical Lead, Unity Developer, 3D Artists, Marketing Advisor</p>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="mb-16">
+            <h2 class="section-header">The Problem</h2>
+            <p class="text-lg">
+                As an early-stage mobile game in the niche space of Web3 and climate change, Hazel needed a dedicated user base to provide critical feedback for improving the game and application experience. The challenge was to create a reliable and ongoing feedback loop from a small community of passionate users, which was crucial for prioritizing features and validating the product roadmap.
+            </p>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="mb-16">
+            <h2 class="section-header">The Solution</h2>
+            <p class="text-lg mb-8">
+                My work focused on building a strong community and using user feedback to shape the product. I applied UX principles to this task, ensuring that the feedback we received was actionable and directly influenced the development process.
+            </p>
+            
+            <div class="space-y-12">
+                <!-- Solution Highlight 1 -->
+                <div>
+                    <img src="https://placehold.co/800x400/E5E7EB/9CA3AF?text=Community+Growth+Before+and+After" alt="Community growth on Twitter" class="project-image-placeholder mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Building a Community Feedback Loop</h3>
+                    <p class="text-gray-700">
+                        I established a dedicated community on Twitter and eventually Discord. Through polls, direct messaging, and hosted AMAs, I actively engaged with users to gather insights. This process allowed us to move from a small base of 37 followers to a dedicated community of over 2,000 users.
+                    </p>
+                </div>
+
+                <!-- Solution Highlight 2 -->
+                <div>
+                    <img src="https://placehold.co/800x400/E5E7EB/9CA3AF?text=User+Feedback+Mockups" alt="User feedback and mockups" class="project-image-placeholder mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Translating Feedback into Design</h3>
+                    <p class="text-gray-700">
+                        I created mockups and designed experiences based on user feedback and usability heuristics. I worked directly with the artists and developers to prioritize and implement these changes, such as exploring notification prompts and redesigning the island stats page.
+                    </p>
+                </div>
+
+                <!-- Solution Highlight 3 -->
+                <div>
+                    <img src="https://placehold.co/800x400/E5E7EB/9CA3AF?text=Graphic+Design+Examples" alt="Examples of social media graphics" class="project-image-placeholder mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Graphic Design for Community Engagement</h3>
+                    <p class="text-gray-700">
+                        I produced a variety of social media graphics and visual assets to help grow the community and promote the app's brand. This work was crucial for gaining attention and interest in a competitive market.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="mb-16">
+            <h2 class="section-header">The Outcome & Impact</h2>
+            <p class="text-lg">
+                My efforts directly resulted in a significant growth in the application's user base and social media presence. Most importantly, the user feedback I gathered and communicated helped shape the app experience, ensuring we were building a product that was both engaging and valuable to its users. The lessons learned in this startup environment were invaluable and provided a strong foundation for my UX career.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-6 text-center text-gray-600">
+        <p>This case study is a work of fiction based on real project details.</p>
+    </footer>
+
+</body>
+</html>
