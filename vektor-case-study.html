@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vektor Case Study | Liz Covington</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+        }
+        /* Custom styles for professional aesthetic */
+        .case-study-container {
+            max-width: 960px;
+        }
+        .section-header {
+            font-size: 2.5rem; /* 40px */
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        .project-image-placeholder {
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Case Study Header -->
+    <header class="bg-white py-12 md:py-16">
+        <div class="case-study-container mx-auto px-4">
+            <nav class="mb-8">
+                <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">
+                    ← Back to Projects
+                </a>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Vektor: Digitizing Regulated Processes</h1>
+            <p class="text-xl text-gray-600 max-w-2xl">
+                A case study on redesigning a complex web application to digitize document review and project tracking in a highly regulated industry.
+            </p>
+        </div>
+    </header>
+
+    <main class="case-study-container mx-auto px-4 py-12 md:py-16">
+        
+        <!-- Confidentiality Notice -->
+        <section class="mb-16 bg-red-50 border-l-4 border-red-500 text-red-700 p-4 rounded-lg" role="alert">
+            <h3 class="font-bold">Confidentiality Notice</h3>
+            <p class="text-sm">
+                To protect proprietary and confidential information, details regarding this project have been generalized. Specific company names, data, and metrics have been omitted. For a more in-depth discussion, please contact me directly.
+            </p>
+        </section>
+
+        <!-- Project Details Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div>
+                <h3 class="font-bold text-gray-900 mb-2">My Role</h3>
+                <p>Lead UX/UI Designer</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 mb-2">My Contribution</h3>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>UX/UI Design & Strategy</li>
+                    <li>Guerrilla User Research</li>
+                    <li>Figma Prototyping</li>
+                    <li>Developer Collaboration</li>
+                    <li>Design System Contribution</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 mb-2">Team</h3>
+                <p>1 Product Manager, 1 Lead Developer, 1 QA Engineer</p>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="mb-16">
+            <h2 class="section-header">The Problem</h2>
+            <p class="text-lg">
+                In highly regulated industries like pharmaceutical manufacturing, the document review and approval process for equipment validation (CQV/CSV) was heavily reliant on outdated, manual methods. This paper and email-based workflow led to significant delays, a lack of transparency, and limited collaboration. Project managers and team members struggled to get a real-time, unified view of a project's status, often resorting to creating their own spreadsheets just to keep track.
+            </p>
+        </section>
+
+        <!-- Process & My Approach Section -->
+        <section class="mb-16">
+            <h2 class="section-header">My Process & Approach</h2>
+            <p class="text-lg mb-8">
+                The product, Vektor, was already in development when I joined. My challenge was to take a pre-existing platform and, through redesign and new feature development, transform it into a truly intuitive and efficient tool. My approach was both iterative and collaborative.
+            </p>
+            
+            <div class="space-y-12">
+                <!-- Research -->
+                <div class="flex flex-col md:flex-row items-start md:space-x-8">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/E5E7EB/9CA3AF?text=Research+Insights" alt="User research visuals" class="project-image-placeholder mb-4">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-2">Guerrilla User Research</h3>
+                        <p class="text-gray-700">
+                            Given the constraints of working with a niche, B2B product and limited direct user access, I employed guerrilla user research. I conducted informal interviews and testing with an internal stakeholder and used tools like UXtweak to gather feedback, which was crucial for identifying pain points and informing my design decisions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Wireframing & Prototyping -->
+                <div class="flex flex-col md:flex-row items-start md:space-x-8">
+                    <div class="md:w-1/2 order-1 md:order-2">
+                        <img src="https://placehold.co/600x400/E5E7EB/9CA3AF?text=Wireframes+%26+Prototypes" alt="Wireframes and prototypes" class="project-image-placeholder mb-4">
+                    </div>
+                    <div class="md:w-1/2 order-2 md:order-1">
+                        <h3 class="text-2xl font-semibold mb-2">Iterative Design & Collaboration</h3>
+                        <p class="text-gray-700">
+                            I translated user requirements into low-fidelity wireframes and high-fidelity mockups in Figma. I held regular review sessions with the lead developer to test concepts, problem-solve technical limitations, and ensure a smooth handoff. This tight feedback loop was critical to the success of the new features.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="mb-16">
+            <h2 class="section-header">The Solution</h2>
+            <p class="text-lg mb-8">
+                My work on the Vektor platform focused on redesigning a range of key features to improve usability and team collaboration. While a significant portion of my time was dedicated to a complex, multi-page overview dashboard, I will highlight the redesigned login and landing page to showcase my approach to visual design and user flow.
+            </p>
+            
+            <div class="space-y-12">
+                <!-- Solution Highlight 1 -->
+                <div>
+                    <img src="https://placehold.co/800x500/E5E7EB/9CA3AF?text=Redesigned+Login+Page+Mockup" alt="Mockup of the redesigned login/landing page" class="project-image-placeholder mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">A Modern and Intuitive Login Experience</h3>
+                    <p class="text-gray-700">
+                        The redesigned login and landing page was an important first step in modernizing the user experience. My goal was to simplify the interface, improve visual clarity, and create a more intuitive entry point for users. This included a visual refresh that aligned with a new design system and a focus on reducing friction to get users into the application quickly.
+                    </p>
+                </div>
+
+                <!-- Solution Highlight 2 -->
+                <div>
+                    <img src="https://placehold.co/800x500/E5E7EB/9CA3AF?text=Component+Library+Mockup" alt="Component library mockup" class="project-image-placeholder mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Scalable Design System</h3>
+                    <p class="text-gray-700">
+                        In parallel, I contributed to the company's nascent design system, building reusable components and clear documentation. This ensured visual consistency across the platform and provided a foundation for future design and development work.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="mb-16">
+            <h2 class="section-header">The Outcome & Impact</h2>
+            <p class="text-lg">
+                The redesigned overview page and its sub-features were successfully launched and integrated into the Vektor product. The new digital-first workflow improved team collaboration and provided a single source of truth for all project information. By making the process transparent and streamlined, we helped teams work more efficiently and reduce the delays inherent in legacy, paper-based systems.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-6 text-center text-gray-600">
+        <p>This case study is a work of fiction based on real project details.</p>
+    </footer>
+
+</body>
+</html>
