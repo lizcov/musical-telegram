@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liz Covington | UX/UI Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom styles for professional aesthetic */
+        .card-bg {
+            background-color: #f8f9fa; /* A light, professional grey */
+        }
+        .project-title {
+            color: #333;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo/Name -->
+            <a href="#" class="text-2xl font-bold text-gray-900">Liz Covington</a>
+            <!-- Navigation -->
+            <nav class="space-x-4 hidden md:block">
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">About</a>
+                <a href="#work" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Work</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-16 md:py-24">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                UX/UI Designer <br class="hidden md:inline">
+                Crafting Intuitive Digital Experiences.
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                I help companies solve complex problems at scale by designing user-centered products that are simple, effective, and beautiful.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#work" class="bg-gray-900 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-200">View My Work</a>
+                <a href="#contact" class="bg-white text-gray-900 font-medium py-3 px-6 rounded-lg border border-gray-300 hover:bg-gray-100 transition-colors duration-200">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 border-t border-gray-200">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+                <div class="text-lg text-gray-700 leading-relaxed space-y-4">
+                    <p>I am a passionate UX/UI Designer with 2+ years of experience in the full design lifecycle. My journey has taken me from leading design for complex web applications in regulated industries to conducting in-depth user research and usability testing for climate tech startups.</p>
+                    <p>I have a strong foundation in user-centered design principles and a working knowledge of front-end development, which allows me to effectively collaborate with engineers and bridge the gap between design and technical feasibility. My goal is to create thoughtful and impactful digital experiences that empower users and drive meaningful change.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work/Projects Section -->
+        <section id="work" class="py-16 border-t border-gray-200">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/E5E7EB/9CA3AF?text=Project+Image+1" alt="Project 1 Image" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <h3 class="project-title text-xl mb-2">Project Name</h3>
+                        <p class="text-sm text-gray-600 mb-4">UX/UI Design, Usability Testing</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                            View Case Study
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/E5E7EB/9CA3AF?text=Project+Image+2" alt="Project 2 Image" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <h3 class="project-title text-xl mb-2">Project Name</h3>
+                        <p class="text-sm text-gray-600 mb-4">UX Strategy, Visual Design</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                            View Case Study
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/E5E7EB/9CA3AF?text=Project+Image+3" alt="Project 3 Image" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <h3 class="project-title text-xl mb-2">Project Name</h3>
+                        <p class="text-sm text-gray-600 mb-4">Information Architecture, Prototyping</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                            View Case Study
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 border-t border-gray-200">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    I'm currently seeking new opportunities and would love to hear from you.
+                </p>
+                <a href="mailto:lizajsoos@gmail.com" class="bg-gray-900 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-200">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-6 text-center text-gray-600">
+        <p>© 2024 Liz Covington. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
