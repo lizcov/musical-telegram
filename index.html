@@ -38,12 +38,18 @@
                 <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a>
             </nav>
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-gray-600 hover:text-gray-900 transition-colors duration-200">
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-gray-900 transition-colors duration-200">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
         </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-gray-50 py-4 mt-2 transition-all duration-300 ease-in-out">
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">About</a>
+            <a href="#work" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Work</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact</a>
+        </nav>
     </header>
 
     <main class="container mx-auto px-4 py-8">
@@ -57,8 +63,9 @@
             <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
                 I help companies solve complex problems at scale by designing user-centered products that are simple, effective, and beautiful.
             </p>
-            <div class="mt-8 flex justify-center space-x-4">
+            <div class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="#work" class="bg-gray-900 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-200">View My Work</a>
+                <a href="Liz-Covington-Resume.pdf" download="Liz-Covington-Resume.pdf" class="bg-gray-900 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-200">Download My Resume</a>
                 <a href="#contact" class="bg-white text-gray-900 font-medium py-3 px-6 rounded-lg border border-gray-300 hover:bg-gray-100 transition-colors duration-200">Get in Touch</a>
             </div>
         </section>
@@ -80,13 +87,13 @@
             <h2 class="text-3xl font-bold text-center mb-12">Featured Work</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Project Card 1 -->
+                <!-- Project Card 1: Vektor -->
                 <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://placehold.co/600x400/E5E7EB/9CA3AF?text=Project+Image+1" alt="Project 1 Image" class="w-full h-auto object-cover">
+                    <img src="https://placehold.co/600x400/F3F4F6/6B7280?text=Vektor+App+Mockup" alt="Vektor Project Image" class="w-full h-auto object-cover">
                     <div class="p-6">
-                        <h3 class="project-title text-xl mb-2">Project Name</h3>
-                        <p class="text-sm text-gray-600 mb-4">UX/UI Design, Usability Testing</p>
-                        <a href="vektor-case-study.html" class="inline-flex items-center text-blue-600 hover:underline">
+                        <h3 class="project-title text-xl mb-2">Vektor: Digitizing Regulated Processes</h3>
+                        <p class="text-sm text-gray-600 mb-4">UX/UI Design, Usability Testing, Developer Collaboration</p>
+                        <a href="dynamixe_case_study.html" class="inline-flex items-center text-blue-600 hover:underline">
                             View Case Study
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -95,13 +102,13 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2 -->
+                <!-- Project Card 2: Hazel -->
                 <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://placehold.co/600x400/E5E7EB/9CA3AF?text=Project+Image+2" alt="Project 2 Image" class="w-full h-auto object-cover">
+                    <img src="https://placehold.co/600x400/F3F4F6/6B7280?text=Hazel+Climate+App+Mockup" alt="Hazel Project Image" class="w-full h-auto object-cover">
                     <div class="p-6">
-                        <h3 class="project-title text-xl mb-2">Project Name</h3>
-                        <p class="text-sm text-gray-600 mb-4">UX Strategy, Visual Design</p>
-                        <a href="documentary-project.html" class="inline-flex items-center text-blue-600 hover:underline">
+                        <h3 class="project-title text-xl mb-2">Hazel: Gamifying Carbon Removal</h3>
+                        <p class="text-sm text-gray-600 mb-4">User Research, Community Building, Low-Fi Prototyping</p>
+                        <a href="hazel_case_study.html" class="inline-flex items-center text-blue-600 hover:underline">
                             View Case Study
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -110,13 +117,13 @@
                     </div>
                 </div>
 
-                <!-- Project Card 3 -->
+                <!-- Project Card 3: Media vs. Reality -->
                 <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://placehold.co/600x400/E5E7EB/9CA3AF?text=Project+Image+3" alt="Project 3 Image" class="w-full h-auto object-cover">
+                    <img src="https://placehold.co/600x400/F3F4F6/6B7280?text=Media+Project+Mockup" alt="Media vs. Reality Project Image" class="w-full h-auto object-cover">
                     <div class="p-6">
-                        <h3 class="project-title text-xl mb-2">Project Name</h3>
-                        <p class="text-sm text-gray-600 mb-4">Information Architecture, Prototyping</p>
-                        <a href="hazel-project.html" class="inline-flex items-center text-blue-600 hover:underline">
+                        <h3 class="project-title text-xl mb-2">Media vs. Reality</h3>
+                        <p class="text-sm text-gray-600 mb-4">Research, Information Architecture, Storytelling</p>
+                        <a href="masters_project_page.html" class="inline-flex items-center text-blue-600 hover:underline">
                             View Case Study
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -139,6 +146,7 @@
                         </a>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -163,5 +171,14 @@
         <p>© 2025 Liz Covington. All rights reserved.</p>
     </footer>
 
+    <!-- Mobile menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
