@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Audits & Critiques | Liz Covington</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+        }
+        .case-study-container {
+            max-width: 960px;
+        }
+        .section-header {
+            font-size: 2.5rem; /* 40px */
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        .project-image-placeholder {
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Case Study Header -->
+    <header class="bg-white py-12 md:py-16">
+        <div class="case-study-container mx-auto px-4">
+            <nav class="mb-8">
+                <a href="index.html#work" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">
+                    ← Back to Projects
+                </a>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">UX Audits & Design Critiques</h1>
+            <p class="text-xl text-gray-600 max-w-2xl">
+                A collection of focused, quick-turnaround UX audits and design feedback.
+            </p>
+        </div>
+    </header>
+
+    <main class="case-study-container mx-auto px-4 py-12 md:py-16">
+
+        <!-- City of Refuge Audit -->
+        <section class="mb-16">
+            <h2 class="section-header">City of Refuge Website Audit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-2">My Role</h3>
+                    <p>UX/UI Analyst</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-2">My Contribution</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>UX Audit</li>
+                        <li>Accessibility Analysis (WCAG 2.1)</li>
+                        <li>User Flow Analysis</li>
+                        <li>Strategic Recommendations</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Date</h3>
+                    <p>2025</p>
+                </div>
+            </div>
+            
+            <p class="text-lg mb-8">
+                I performed a brief audit of the City of Refuge website, focusing on key aspects of user experience, from accessibility to the primary user flows. The audit identified both significant strengths and one critical area for improvement.
+            </p>
+
+            <div class="space-y-12">
+                <!-- Finding 1: Strengths -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2 text-green-700">✅ Strengths: Delighting the Donor</h3>
+                    <p class="text-gray-700">
+                        The site's primary call-to-action, the donation button, is prominent and easy to find. The subsequent pop-up donation form is particularly well-designed: it's delightful, simple to use, and includes dynamic content that makes the user's experience personal and engaging. This highlights a clear understanding of the user's primary intent and a commitment to removing friction from the most important conversion path. The volunteer sign-up process was also seamless and engaging.
+                    </p>
+                </div>
+
+                <!-- Finding 2: Weakness -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2 text-red-700">❌ Opportunity: Color Contrast and Accessibility</h3>
+                    <p class="text-gray-700">
+                        The most critical issue found was the low color contrast ratio of the text, particularly on buttons and over branded images. My analysis confirmed a contrast ratio of **2.51:1**, which falls significantly below the required **4.5:1** for normal text under **WCAG 2.1 AA** guidelines. This accessibility issue makes the site difficult to read for users with low vision, color blindness, or those in brightly lit environments.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- The Solution Section -->
+            <div class="mt-12">
+                <h2 class="section-header">The Solution: A Strategic Design Opportunity</h2>
+                <p class="text-lg mb-8">
+                    The identified contrast issue is a major but straightforward fix. The solution is to ensure all text meets or exceeds the WCAG 2.1 AA standard for contrast. This could be achieved by using a darker brand color for text, adding an opaque overlay behind text on images, or adjusting the placement of text.
+                </p>
+                
+                <div>
+                    <img src="https://placehold.co/800x450/F3F4F6/6B7280?text=Before+and+After+Comparison" alt="Before and After mockup showing color contrast changes" class="project-image-placeholder mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">The Impact of Accessibility</h3>
+                    <p class="text-gray-700">
+                        By addressing this accessibility issue, the City of Refuge can immediately improve the user experience for a broad range of visitors. A more readable and accessible site reduces user frustration, strengthens the organization's brand reputation, and ultimately has the potential to increase engagement and donations by ensuring that all users can successfully complete their desired actions on the site.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-6 text-center text-gray-600">
+        <p>This is an independent case study and not client work.</p>
+    </footer>
+
+</body>
+</html>
