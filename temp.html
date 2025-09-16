@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Portfolio Visuals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-8 flex flex-col items-center">
+
+    <div class="max-w-4xl w-full bg-white rounded-xl shadow-lg p-8">
+
+        <h1 class="text-3xl font-bold text-center mb-10">Portfolio Visual Examples</h1>
+
+        <!-- --- Flow Diagram Section --- -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6 text-center">Iterative Feedback Loop</h2>
+            <div class="flex justify-center">
+                <svg width="600" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Define styles for reusability -->
+                    <defs>
+                        <style>
+                            .box {
+                                fill: #ffffff;
+                                stroke: #d1d5db;
+                                stroke-width: 2;
+                            }
+                            .box-shadow {
+                                filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
+                            }
+                            .arrow {
+                                stroke: #4b5563;
+                                stroke-width: 2;
+                                fill: none;
+                                marker-end: url(#arrowhead);
+                            }
+                            .text-label {
+                                font-family: 'Inter', sans-serif;
+                                font-size: 14px;
+                                font-weight: 600;
+                                fill: #1f2937;
+                            }
+                            .arrow-label {
+                                font-family: 'Inter', sans-serif;
+                                font-size: 12px;
+                                fill: #6b7280;
+                            }
+                        </style>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="10 3.5, 0 0, 0 7" fill="#4b5563" />
+                        </marker>
+                    </defs>
+            
+                    <!-- Design Box -->
+                    <rect x="50" y="50" rx="10" ry="10" width="150" height="60" class="box box-shadow" />
+                    <text x="125" y="85" text-anchor="middle" class="text-label">Design</text>
+            
+                    <!-- Stakeholder Feedback Box -->
+                    <rect x="250" y="50" rx="10" ry="10" width="200" height="60" class="box box-shadow" />
+                    <text x="350" y="85" text-anchor="middle" class="text-label">Stakeholder Feedback</text>
+            
+                    <!-- Final Implementation Box -->
+                    <rect x="200" y="150" rx="10" ry="10" width="200" height="60" class="box box-shadow" />
+                    <text x="300" y="185" text-anchor="middle" class="text-label">Final Implementation</text>
+            
+                    <!-- Arrows -->
+                    <!-- Design to Stakeholder Feedback -->
+                    <path d="M 200 80 H 250" class="arrow" />
+                    <text x="225" y="75" text-anchor="middle" class="arrow-label">Iterate</text>
+            
+                    <!-- Stakeholder Feedback back to Design (The Loop) -->
+                    <path d="M 350 110 V 130 C 350 150, 200 150, 200 130 V 110" class="arrow" />
+                    <text x="275" y="145" text-anchor="middle" class="arrow-label">Refine</text>
+            
+                    <!-- Stakeholder Feedback to Final Implementation -->
+                    <path d="M 350 110 V 150" class="arrow" />
+                    <text x="360" y="130" text-anchor="middle" class="arrow-label">Approve</text>
+                </svg>
+            </div>
+        </div>
+
+        <hr class="border-gray-300 w-full my-12" />
+
+        <!-- --- User Persona Section --- -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6 text-center">User Persona Template</h2>
+            <div class="flex justify-center">
+                <svg width="600" height="650" viewBox="0 0 600 650" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Define styles for reusability -->
+                    <defs>
+                        <style>
+                            .persona-card {
+                                fill: #f3f4f6;
+                                stroke: #d1d5db;
+                                stroke-width: 1;
+                            }
+                            .persona-header {
+                                fill: #1f2937;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                            .persona-text {
+                                fill: #4b5563;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 16px;
+                            }
+                            .label-text {
+                                fill: #1f2937;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                            .quote-box {
+                                fill: #e5e7eb;
+                            }
+                        </style>
+                    </defs>
+            
+                    <!-- Persona Card Background -->
+                    <rect x="10" y="10" rx="12" ry="12" width="580" height="630" class="persona-card" />
+            
+                    <!-- Header Section -->
+                    <rect x="10" y="10" rx="12" ry="12" width="580" height="120" class="quote-box" />
+                    <circle cx="90" cy="70" r="40" fill="#9ca3af" />
+                    <text x="90" y="70" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="#f9fafb" font-weight="bold">PIC</text>
+            
+                    <text x="180" y="60" class="persona-header">Persona Name</text>
+                    <text x="180" y="90" class="persona-text">Job Title</text>
+                    <text x="180" y="110" class="persona-text">Demographics</text>
+            
+                    <!-- Quote Section -->
+                    <rect x="10" y="130" width="580" height="70" class="quote-box" />
+                    <text x="30" y="160" font-style="italic" fill="#374151" font-size="16">“A representative quote from the user.”</text>
+            
+                    <!-- Frustrations Section -->
+                    <text x="30" y="230" class="label-text">Frustrations</text>
+                    <rect x="30" y="240" rx="8" ry="8" width="250" height="150" class="persona-card" />
+                    <text x="40" y="265" class="persona-text">Pain Point 1</text>
+                    <text x="40" y="295" class="persona-text">Pain Point 2</text>
+                    <text x="40" y="325" class="persona-text">Pain Point 3</text>
+            
+                    <!-- Goals Section -->
+                    <text x="320" y="230" class="label-text">Goals</text>
+                    <rect x="320" y="240" rx="8" ry="8" width="250" height="150" class="persona-card" />
+                    <text x="330" y="265" class="persona-text">Goal 1</text>
+                    <text x="330" y="295" class="persona-text">Goal 2</text>
+                    <text x="330" y="325" class="persona-text">Goal 3</text>
+            
+                    <!-- Bio Section -->
+                    <text x="30" y="420" class="label-text">Bio</text>
+                    <rect x="30" y="430" rx="8" ry="8" width="540" height="190" class="persona-card" />
+                    <text x="40" y="455" class="persona-text">A brief paragraph describing the user's background, professional life,</text>
+                    <text x="40" y="475" class="persona-text">and daily routines. This section helps to build empathy and context.</text>
+                    <text x="40" y="505" class="persona-text">You can include details about their job, their motivations, and any</text>
+                    <text x="40" y="525" class="persona-text">other relevant information that informs your design decisions.</text>
+            
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
