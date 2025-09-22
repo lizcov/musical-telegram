@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vektor Case Study | Liz Covington</title>
+    <title>Vektor | Liz Covington</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +15,11 @@
             -moz-osx-font-smoothing: grayscale;
             line-height: 1.6;
         }
-        /* Custom styles for professional aesthetic */
         .case-study-container {
             max-width: 960px;
         }
         .section-header {
-            font-size: 2.5rem; /* 40px */
+            font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             line-height: 1.2;
@@ -28,14 +27,14 @@
         .project-image-placeholder {
             width: 100%;
             height: auto;
-            border-radius: 0.75rem; /* rounded-xl */
+            border-radius: 0.75rem;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Case Study Header -->
+    <!-- Project Header -->
     <header class="bg-white py-12 md:py-16">
         <div class="case-study-container mx-auto px-4">
             <nav class="mb-8">
@@ -43,379 +42,141 @@
                     ← Back to Projects
                 </a>
             </nav>
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Vektor: Digitizing Regulated Processes</h1>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Vektor</h1>
             <p class="text-xl text-gray-600 max-w-2xl">
-                A case study on redesigning a complex web application to digitize document review and project tracking in a highly regulated industry.
+                A B2B SaaS tool that streamlines the UX research synthesis process, bringing a structured approach to qualitative data analysis for product teams.
             </p>
         </div>
     </header>
 
     <main class="case-study-container mx-auto px-4 py-12 md:py-16">
         
-        <!-- Confidentiality Notice -->
-        <section class="mb-16 bg-red-50 border-l-4 border-red-500 text-red-700 p-4 rounded-lg" role="alert">
-            <h3 class="font-bold">Confidentiality Notice</h3>
-            <p class="text-sm">
-                To protect proprietary and confidential information, details regarding this project have been generalized. Specific company names, data, and metrics have been omitted and images are generalized placeholders. For a more in-depth discussion, please contact me directly.
-            </p>
-        </section>
-
         <!-- Project Details Section -->
         <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div>
                 <h3 class="font-bold text-gray-900 mb-2">My Role</h3>
-                <p>Lead UX/UI Designer</p>
-            </div>
-            <div>
-                <h3 class="font-bold text-gray-900 mb-2">My Contribution</h3>
                 <ul class="list-disc list-inside space-y-1">
-                    <li>UX/UI Design & Strategy</li>
-                    <li>Guerrilla User Research</li>
-                    <li>Collaborative Sketching & Ideation</li>
-                    <li>Figma Prototyping</li>
-                    <li>Developer Collaboration</li>
-                    <li>Design System Contribution</li>
+                    <li>UX Researcher</li>
+                    <li>Product Designer</li>
+                    <li>UI/UX Designer</li>
                 </ul>
             </div>
             <div>
-                <h3 class="font-bold text-gray-900 mb-2">Team</h3>
-                <p>1 Product Manager, 1 Lead Developer, 1 QA Engineer</p>
+                <h3 class="font-bold text-gray-900 mb-2">Project Type</h3>
+                <p>Personal Project (B2B SaaS)</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 mb-2">Timeline</h3>
+                <p>4 weeks (Summer 2023)</p>
             </div>
         </section>
 
-        <!-- Problem Section -->
+        <!-- Project Overview Section -->
+        <section class="mb-16">
+            <h2 class="section-header">The Project</h2>
+            <p class="text-lg">
+                Vektor is a personal project I created to solve a common problem I've faced as a UX Researcher and Designer: the messy, manual process of synthesizing qualitative research data. The goal of this project was to design and prototype a tool that empowers product teams to quickly analyze user interviews, surveys, and other qualitative data, and to turn those findings into actionable product insights.
+            </p>
+        </section>
+
+        <!-- The Challenge Section -->
         <section class="mb-16">
             <h2 class="section-header">The Challenge</h2>
-            <p class="text-lg">The primary challenge was to take a pre-existing enterprise application, designed for a niche audience, and transform it. The application was highly functional, but its interface was dated and lacked consistency and a modern feel. The complexity of the information and the highly regulated nature of the work—from project management to human resources and payroll—demanded a solution that was not only robust but also intuitive. The goal was to create a cohesive, user-friendly experience that allowed users to easily navigate complex workflows, manage a wide range of tasks, and feel confident in the application's ability to handle their critical data with precision.</p>
+            <p class="text-lg">
+                How might we give product teams a structured, efficient way to identify patterns and themes in large amounts of qualitative data, making research synthesis a collaborative and scalable process?
+            </p>
         </section>
-
-        <!-- Process Section with Image Placeholders -->
+        
+        <!-- The Process Section -->
         <section class="mb-16">
-            <h2 class="section-header">My Process & Approach</h2>
-            <p class="text-lg mb-8">The product, Vektor, was already in development when I joined. My challenge was to transform a pre-existing platform into a truly intuitive and efficient tool. Given the constraints of a niche B2B product and limited access to the target user base, I approached design with a resourceful, agile, and highly collaborative mindset.</p>
-            
+            <h2 class="section-header">The Process</h2>
             <div class="space-y-12">
-                <!-- Research -->
-                <div class="flex flex-col md:flex-row items-start md:space-x-8">
-                    <!--<div class="md:w-1/2">
-                        <div class="flex justify-center mt-8">
-                            <div class="max-w-xl w-full">
-                                <svg width="100%" height="650" viewBox="0 0 600 650" xmlns="http://www.w3.org/2000/svg" class="w-full">
-                                    <defs>
-                                        <style>
-                                            .persona-card { fill: #f3f4f6; stroke: #d1d5db; stroke-width: 1; }
-                                            .persona-header { fill: #1f2937; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 700; }
-                                            .persona-text { fill: #4b5563; font-family: 'Inter', sans-serif; font-size: 16px; }
-                                            .label-text { fill: #1f2937; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; }
-                                            .quote-box { fill: #e5e7eb; }
-                                        </style>
-                                    </defs>
-                                    <rect x="10" y="10" rx="12" ry="12" width="580" height="630" class="persona-card" />
-                                    <rect x="10" y="10" rx="12" ry="12" width="580" height="120" class="quote-box" />
-                                    <circle cx="90" cy="70" r="40" fill="#9ca3af" />
-                                    <text x="90" y="70" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="#f9fafb" font-weight="bold">PIC</text>
-                                    <text x="180" y="60" class="persona-header">Persona Name</text>
-                                    <text x="180" y="90" class="persona-text">Job Title</text>
-                                    <text x="180" y="110" class="persona-text">Demographics</text>
-                                    <rect x="10" y="130" width="580" height="70" class="quote-box" />
-                                    <text x="30" y="160" font-style="italic" fill="#374151" font-size="16">“A representative quote from the user.”</text>
-                                    <text x="30" y="230" class="label-text">Frustrations</text>
-                                    <rect x="30" y="240" rx="8" ry="8" width="250" height="150" class="persona-card" />
-                                    <text x="40" y="265" class="persona-text">Pain Point 1</text>
-                                    <text x="40" y="295" class="persona-text">Pain Point 2</text>
-                                    <text x="40" y="325" class="persona-text">Pain Point 3</text>
-                                    <text x="320" y="230" class="label-text">Goals</text>
-                                    <rect x="320" y="240" rx="8" ry="8" width="250" height="150" class="persona-card" />
-                                    <text x="330" y="265" class="persona-text">Goal 1</text>
-                                    <text x="330" y="295" class="persona-text">Goal 2</text>
-                                    <text x="330" y="325" class="persona-text">Goal 3</text>
-                                    <text x="30" y="420" class="label-text">Bio</text>
-                                    <rect x="30" y="430" rx="8" ry="8" width="540" height="190" class="persona-card" />
-                                    <text x="40" y="455" class="persona-text">A brief paragraph describing the user's background, professional life,</text>
-                                    <text x="40" y="475" class="persona-text">and daily routines. This section helps to build empathy and context.</text>
-                                    <text x="40" y="505" class="persona-text">You can include details about their job, their motivations, and any</text>
-                                    <text x="40" y="525" class="persona-text">other relevant information that informs your design decisions.</text>
-                                </svg>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="md:w-1/2">
+                <!-- First Row: Academic & Market Research and Early-Stage Ideation & Collaborative Sketching -->
+                <div class="flex flex-col md:flex-row md:space-x-8">
+                    <!-- Academic & Market Research -->
+                    <div class="mb-8 md:mb-0 md:w-1/2">
+                        <!-- SVG placeholder -->
+                        <!-- <svg class="h-24 w-24 mx-auto mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.835 5.485 9.255 5 7.5 5 5.567 5 4 6.567 4 8.5c0 1.933 1.567 3.5 3.5 3.5 1.755 0 3.335-.485 4.5-1.253m0 0C13.165 11.233 14.745 11.5 16.5 11.5c1.933 0 3.5-1.567 3.5-3.5C20 6.567 18.433 5 16.5 5c-1.755 0-3.335.267-4.5 1.253zM12 6.253a9.004 9.004 0 014.5 4.5h-9a9.004 9.004 0 014.5-4.5zM12 19.253V6.253" />
+                        </svg> -->
                         <h3 class="text-2xl font-semibold mb-2">Academic & Market Research</h3>
-                        <p class="text-gray-700">My process was grounded in extensive academic and market research. I delved into academic papers and case studies to understand the needs of our target users and the industry. This foundational knowledge informed my design decisions and marketing messaging, ensuring my work was strategically sound even without direct user access.</p>
+                        <p class="text-gray-700">
+                            I began by exploring existing tools for research synthesis and academic frameworks like grounded theory. I identified a gap in the market for a tool that could effectively balance a structured approach with the flexibility needed for qualitative data.
+                        </p>
                     </div>
-                </div>
 
-                <!-- NEW SECTION: Sketching & Ideation -->
-                <!-- <div class="flex flex-col md:flex-row items-start md:space-x-8">
+                    <!-- Early-Stage Ideation & Collaborative Sketching -->
                     <div class="md:w-1/2">
-                        <div class="flex justify-center mt-8">
-                            <div class="max-w-xl w-full">
-                                <svg width="100%" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" class="w-full">
-                                    <defs>
-                                        <style>
-                                            .board { fill: #f3f4f6; stroke: #d1d5db; stroke-width: 2; border-radius: 8px; }
-                                            .sketch-line { fill: none; stroke: #4b5563; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-                                            .person { fill: #9ca3af; }
-                                            .hand { fill: #d1d5db; stroke: #9ca3af; stroke-width: 1; }
-                                            .marker { fill: #1f2937; }
-                                        </style>
-                                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                                            <polygon points="10 3.5, 0 0, 0 7" fill="#4b5563" />
-                                        </marker>
-                                    </defs>
-                                    <!-- Whiteboard/Sketchpad -->
-                            <!--    <rect x="50" y="50" rx="10" ry="10" width="500" height="300" class="board" />
-                                    <!-- Sketch 1: Main UI -->
-                            <!-- <rect x="80" y="80" width="120" height="180" class="sketch-line" />
-                                    <rect x="90" y="90" width="100" height="10" class="sketch-line" />
-                                    <path d="M 90 110 L 180 110" class="sketch-line" />
-                                    <path d="M 90 125 L 180 125" class="sketch-line" />
-                                    <circle cx="140" cy="220" r="15" class="sketch-line" />
-                                    <!-- Sketch 2: Flow Diagram -->
-                            <!-- <rect x="230" y="80" width="100" height="40" class="sketch-line" />
-                                    <path d="M 280 120 V 140" class="sketch-line" marker-end="url(#arrowhead)" />
-                                    <rect x="230" y="140" width="100" height="40" class="sketch-line" />
-                                    <path d="M 280 180 V 200" class="sketch-line" marker-end="url(#arrowhead)" />
-                                    <circle cx="280" cy="220" r="20" class="sketch-line" />
-                                    <!-- Sketch 3: Components -->
-                            <!-- <rect x="360" y="80" width="150" height="30" class="sketch-line" />
-                                    <rect x="360" y="120" width="150" height="30" class="sketch-line" />
-                                    <rect x="360" y="160" width="150" height="30" class="sketch-line" />
-                                    <!-- People sketching -->
-                            <!--  <circle cx="150" cy="350" r="20" class="person" />
-                                    <path d="M 150 330 V 280" class="sketch-line" />
-                                    <circle cx="450" cy="350" r="20" class="person" />
-                                    <path d="M 450 330 V 280" class="sketch-line" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="md:w-1/2">
+                        <!-- SVG placeholder -->
+                        <!-- <svg class="h-24 w-24 mx-auto mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12h-3m3 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21L9 9m12 12l-1.5-1.5" />
+                        </svg> -->
                         <h3 class="text-2xl font-semibold mb-2">Early-Stage Ideation & Collaborative Sketching</h3>
-                        <p class="text-gray-700">Before jumping into high-fidelity mockups, I collaborated with another designer to explore a range of solutions through quick, iterative sketching sessions. This process allowed us to rapidly ideate, align on a shared vision, and solve complex layout challenges on paper before committing to digital wireframes. This early-stage collaboration was key to building a robust foundation for the rest of the design process.</p>
+                        <p class="text-gray-700">
+                            Working with a product manager, I ran a collaborative sketching session to brainstorm initial workflows and feature sets. This early ideation was key to building a shared understanding and prioritizing core functionalities.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Wireframing & Prototyping -->
-            <!-- <div class="flex flex-col md:flex-row items-start md:space-x-8">
-                    <div class="md:w-1/2 order-1 md:order-2">
-                         <!-- Custom SVG for Wireframes & Prototypes -->
-                    <!-- <div class="flex justify-center mt-8">
-                            <div class="max-w-xl w-full">
-                                <svg width="100%" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" class="w-full">
-                                    <defs>
-                                        <style>
-                                            .mockup-frame { fill: #f9fafb; stroke: #d1d5db; stroke-width: 2; border-radius: 8px; }
-                                            .mockup-line { fill: none; stroke: #9ca3af; stroke-width: 2; stroke-linecap: round; }
-                                            .mockup-circle { fill: #d1d5db; }
-                                            .mockup-rect { fill: #e5e7eb; }
-                                            .mobile-frame { fill: #f9fafb; stroke: #d1d5db; stroke-width: 2; border-radius: 8px; }
-                                            .mobile-line { fill: none; stroke: #9ca3af; stroke-width: 1; stroke-linecap: round; }
-                                        </style>
-                                    </defs>
-                                    <!-- Desktop Wireframe -->
-                                <!-- <rect x="40" y="50" rx="10" ry="10" width="350" height="250" class="mockup-frame" />
-                                    <rect x="50" y="60" width="330" height="20" rx="3" ry="3" class="mockup-rect" />
-                                    <rect x="50" y="90" width="30" height="15" rx="3" ry="3" class="mockup-rect" />
-                                    <rect x="90" y="90" width="30" height="15" rx="3" ry="3" class="mockup-rect" />
-                                    <rect x="130" y="90" width="30" height="15" rx="3" ry="3" class="mockup-rect" />
-                                    <rect x="50" y="120" width="100" height="150" rx="5" ry="5" class="mockup-rect" />
-                                    <rect x="160" y="120" width="220" height="150" rx="5" ry="5" class="mockup-rect" />
-                                    <!-- Mobile Wireframe -->
-                                <!-- <rect x="430" y="50" rx="15" ry="15" width="120" height="250" class="mobile-frame" />
-                                    <rect x="445" y="65" width="90" height="8" rx="2" ry="2" class="mockup-rect" />
-                                    <rect x="445" y="80" width="90" height="120" rx="5" ry="5" class="mockup-rect" />
-                                    <rect x="445" y="210" width="90" height="15" rx="3" ry="3" class="mockup-rect" />
-                                    <rect x="445" y="230" width="90" height="15" rx="3" ry="3" class="mockup-rect" />
-                                    <path d="M 445 250 L 535 250" class="mobile-line" />
-                                    <circle cx="480" cy="270" r="5" class="mockup-circle" />
-                                    <circle cx="495" cy="270" r="5" class="mockup-circle" />
-                                    <circle cx="510" cy="270" r="5" class="mockup-circle" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="md:w-1/2 order-2 md:order-1">
+                <!-- Second Row: Agile & Deadline-Driven Prototyping and Iterative & Collaborative Feedback -->
+                <div class="flex flex-col md:flex-row md:space-x-8">
+                    <!-- Agile & Deadline-Driven Prototyping -->
+                    <div class="mb-8 md:mb-0 md:w-1/2">
+                        <!-- SVG placeholder -->
+                        <!-- <svg class="h-24 w-24 mx-auto mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg> -->
                         <h3 class="text-2xl font-semibold mb-2">Agile & Deadline-Driven Prototyping</h3>
-                        <p class="text-gray-700">I quickly moved from high-level requirements directly into high-fidelity mockups in Figma. This approach was a strategic response to a lean, fast-paced environment where the development team worked in two-week sprints. I was able to deliver features with a same-day or 24-hour turnaround to ensure designs were implemented by a designer, not the developers, which was critical for maintaining the product's quality and consistency.</p>
+                        <p class="text-gray-700">
+                            Over a single weekend, I designed and built a high-fidelity prototype in Figma. I adopted an agile approach, prioritizing core user flows and key interactions to have something testable in a short timeframe.
+                        </p>
                     </div>
-                </div>
 
-                 <!-- Feedback Loop -->
-                <div class="flex flex-col md:flex-row items-start md:space-x-8">
+                    <!-- Iterative & Collaborative Feedback -->
                     <div class="md:w-1/2">
-                        <div class="flex justify-center mt-8">
-                            <div class="max-w-xl w-full">
-                                <svg width="100%" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" class="w-full">
-                                    <defs>
-                                        <style>
-                                            .box { fill: #ffffff; stroke: #d1d5db; stroke-width: 2; }
-                                            .box-shadow { filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06)); }
-                                            .arrow { stroke: #4b5563; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
-                                            .text-label { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; fill: #1f2937; }
-                                            .arrow-label { font-family: 'Inter', sans-serif; font-size: 12px; fill: #6b7280; }
-                                        </style>
-                                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                                            <polygon points="10 3.5, 0 0, 0 7" fill="#4b5563" />
-                                        </marker>
-                                    </defs>
-                                    <rect x="50" y="50" rx="10" ry="10" width="150" height="60" class="box box-shadow" />
-                                    <text x="125" y="85" text-anchor="middle" class="text-label">Design</text>
-                                    <rect x="250" y="50" rx="10" ry="10" width="200" height="60" class="box box-shadow" />
-                                    <text x="350" y="85" text-anchor="middle" class="text-label">Stakeholder Feedback</text>
-                                    <rect x="200" y="150" rx="10" ry="10" width="200" height="60" class="box box-shadow" />
-                                    <text x="300" y="185" text-anchor="middle" class="text-label">Final Implementation</text>
-                                    <path d="M 200 80 H 250" class="arrow" />
-                                    <text x="225" y="75" text-anchor="middle" class="arrow-label">Iterate</text>
-                                    <path d="M 350 110 V 130 C 350 150, 200 150, 200 130 V 110" class="arrow" />
-                                    <text x="275" y="145" text-anchor="middle" class="arrow-label">Refine</text>
-                                    <path d="M 350 110 V 150" class="arrow" />
-                                    <text x="360" y="130" text-anchor="middle" class="arrow-label">Approve</text>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2">
+                        <!-- SVG placeholder -->
+                        <!-- <svg class="h-24 w-24 mx-auto mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M16 12h.01M21 12h-3M6 12H3m18 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg> -->
                         <h3 class="text-2xl font-semibold mb-2">Iterative & Collaborative Feedback</h3>
-                        <p class="text-gray-700">Instead of formal user testing, I prioritized an iterative feedback loop with key internal stakeholders, including the lead developer and in-house project managers. This constant communication was critical for problem-solving technical limitations, ensuring a smooth handoff, and providing a unified approach to the product's development. My role was not just to design but to be a strategic partner who got things done.</p>
+                        <p class="text-gray-700">
+                            I conducted usability testing with product managers and UX researchers, gathering feedback on the prototype. This allowed for rapid iteration, refining the product's interface and core functionality based on real user interactions.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Solution Section -->
+        <!-- The Outcome Section -->
         <section class="mb-16">
-            <h2 class="section-header">The Solution</h2>
-            <p class="text-lg mb-8">
-                My work on the Vektor platform focused on redesigning a range of key features to improve usability and team collaboration. While a significant portion of my time was dedicated to a complex, multi-page overview dashboard, I will highlight the redesigned login and landing page to showcase my approach to visual design and user flow.
+            <h2 class="section-header">The Outcome</h2>
+            <p class="text-lg">
+                The final prototype successfully demonstrated a structured workflow for research synthesis, providing a clear path from raw data to actionable insights. It validated the need for a tool that makes qualitative analysis a more efficient and collaborative process for product teams.
             </p>
-            
-            <div class="space-y-12">
-                <!-- Solution Highlight 1 -->
-                <div>
-                    <!-- Custom SVG for Login Page Mockup -->
-                   <!-- <div class="flex justify-center mt-8">
-                        <div class="max-w-xl w-full">
-                            <svg width="100%" height="400" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="w-full">
-                                <defs>
-                                    <style>
-                                        .bg-frame { fill: #f3f4f6; stroke: #e5e7eb; stroke-width: 2; border-radius: 12px; }
-                                        .login-card { fill: #ffffff; stroke: #d1d5db; stroke-width: 2; border-radius: 10px; filter: drop-shadow(0 4px 6px -1px rgba(0, 0, 0, 0.1)); }
-                                        .input-field { fill: #f9fafb; stroke: #d1d5db; stroke-width: 1; border-radius: 6px; }
-                                        .button-cta { fill: #2563eb; border-radius: 6px; }
-                                        .text-label { font-family: 'Inter', sans-serif; font-size: 14px; fill: #6b7280; }
-                                        .text-input { font-family: 'Inter', sans-serif; font-size: 16px; fill: #374151; }
-                                        .text-button { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; fill: #ffffff; }
-                                    </style>
-                                </defs>
-                                <!-- Background frame -->
-                            <!-- <rect x="0" y="0" width="800" height="500" class="bg-frame" />
-                                <!-- Login Card -->
-                            <!-- <rect x="250" y="125" rx="12" ry="12" width="300" height="300" class="login-card" />
-                                <text x="400" y="175" text-anchor="middle" class="text-input" font-weight="bold" font-size="20">Login</text>
-                                <!-- Username Field -->
-                            <!-- <text x="270" y="215" class="text-label">Username</text>
-                                <rect x="270" y="225" rx="6" ry="6" width="260" height="40" class="input-field" />
-                                <!-- Password Field -->
-                            <!--  <text x="270" y="285" class="text-label">Password</text>
-                                <rect x="270" y="295" rx="6" ry="6" width="260" height="40" class="input-field" />
-                                <!-- Button -->
-                            <!-- <rect x="270" y="365" rx="6" ry="6" width="260" height="40" class="button-cta" />
-                                <text x="400" y="390" text-anchor="middle" class="text-button">Sign In</text>
-                            </svg>
-                        </div>
-                    </div> -->
-                    <h3 class="text-2xl font-semibold mb-2">A Modern and Intuitive Login Experience</h3>
-                    <p class="text-gray-700">
-                        The redesigned login and landing page was an important first step in modernizing the user experience. My goal was to simplify the interface, improve visual clarity, and create a more intuitive entry point for users. This included a visual refresh that aligned with a new design system and a focus on reducing friction to get users into the application quickly.
-                    </p>
-                </div>
-
-                <!-- Solution Highlight 2 -->
-                <div>
-                     <!-- Custom SVG for Component Library Mockup -->
-                   <!--  <div class="flex justify-center mt-8">
-                        <div class="max-w-xl w-full">
-                            <svg width="100%" height="400" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="w-full">
-                                <defs>
-                                    <style>
-                                        .comp-frame { fill: #f3f4f6; stroke: #e5e7eb; stroke-width: 2; border-radius: 12px; }
-                                        .comp-card { fill: #ffffff; stroke: #d1d5db; stroke-width: 1; border-radius: 8px; }
-                                        .comp-text { font-family: 'Inter', sans-serif; font-size: 14px; fill: #1f2937; }
-                                        .comp-label { font-family: 'Inter', sans-serif; font-size: 12px; fill: #4b5563; }
-                                        .color-swatch { border-radius: 4px; }
-                                    </style>
-                                </defs>
-                                <!-- Background frame -->
-                            <!-- <rect x="0" y="0" width="800" height="500" class="comp-frame" />
-                                <!-- Components Grid -->
-                            <!-- <g transform="translate(40, 40)">
-                                    <!-- Row 1 -->
-                                <!--  <rect x="0" y="0" width="180" height="80" rx="8" ry="8" class="comp-card" />
-                                    <text x="90" y="25" text-anchor="middle" class="comp-text">Button</text>
-                                    <rect x="20" y="45" width="60" height="20" rx="4" ry="4" fill="#2563eb" />
-                                    <rect x="100" y="45" width="60" height="20" rx="4" ry="4" fill="#9ca3af" />
-
-                                    <rect x="200" y="0" width="180" height="80" rx="8" ry="8" class="comp-card" />
-                                    <text x="290" y="25" text-anchor="middle" class="comp-text">Input Field</text>
-                                    <rect x="220" y="45" width="140" height="20" rx="4" ry="4" fill="#f9fafb" stroke="#d1d5db" />
-                                    <text x="230" y="59" class="comp-label">Placeholder text</text>
-
-                                    <rect x="400" y="0" width="180" height="80" rx="8" ry="8" class="comp-card" />
-                                    <text x="490" y="25" text-anchor="middle" class="comp-text">Dropdown</text>
-                                    <rect x="420" y="45" width="140" height="20" rx="4" ry="4" fill="#f9fafb" stroke="#d1d5db" />
-                                    <text x="430" y="59" class="comp-label">Select option</text>
-                                    <polygon points="550,55 555,50 560,55" fill="#6b7280" />
-                                    
-                                    <!-- Row 2 -->
-                                <!--  <rect x="0" y="100" width="180" height="80" rx="8" ry="8" class="comp-card" />
-                                    <text x="90" y="125" text-anchor="middle" class="comp-text">Color Palette</text>
-                                    <rect x="20" y="145" width="20" height="20" rx="4" ry="4" fill="#2563eb" class="color-swatch" />
-                                    <rect x="50" y="145" width="20" height="20" rx="4" ry="4" fill="#9ca3af" class="color-swatch" />
-                                    <rect x="80" y="145" width="20" height="20" rx="4" ry="4" fill="#1f2937" class="color-swatch" />
-                                    <rect x="110" y="145" width="20" height="20" rx="4" ry="4" fill="#e5e7eb" class="color-swatch" />
-                                    
-                                    <rect x="200" y="100" width="180" height="80" rx="8" ry="8" class="comp-card" />
-                                    <text x="290" y="125" text-anchor="middle" class="comp-text">Typography</text>
-                                    <text x="220" y="145" font-size="24" font-weight="700" fill="#1f2937">Aa</text>
-                                    <text x="255" y="145" font-size="16" fill="#4b5563">The quick brown fox</text>
-                                    
-                                    <rect x="400" y="100" width="180" height="80" rx="8" ry="8" class="comp-card" />
-                                    <text x="490" y="125" text-anchor="middle" class="comp-text">Iconography</text>
-                                    <svg x="420" y="145" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="text-gray-600"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
-                                    <svg x="450" y="145" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="text-gray-600"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6z"/></svg>
-                                    <svg x="480" y="145" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="text-gray-600"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-                                </g>
-                            </svg>
-                        </div> 
-                    </div> -->
-                    <h3 class="text-2xl font-semibold mb-2">Scalable Design System</h3>
-                    <p class="text-gray-700">
-                        When I joined Dynamixe, a design system had been initiated by a previous UI designer. After they left, I became the sole/lead UX/UI designer and was responsible for not only contributing to the product but also for building out the design system itself. This included creating new components, defining design tokens, and ensuring consistency across the platform. This work was critical in establishing a scalable and efficient design workflow for the company.
-                    </p>
-                </div>
-            </div>
         </section>
 
-        <!-- Impact Section -->
+        <!-- Moving Forward Section -->
         <section class="mb-16">
-            <h2 class="section-header">The Outcome & Impact</h2>
-            <p class="text-lg mb-4">
-                The redesign and new feature development for the Vektor platform resulted in a more efficient and user-friendly experience. Key outcomes included:
+            <h2 class="section-header">Moving Forward</h2>
+            <p class="text-lg">
+                Future iterations would focus on building out key features like customizable tagging, automated pattern detection, and a team dashboard for real-time collaboration. The next steps would involve full-stack development, transitioning from a prototype to a fully functional MVP.
             </p>
-            <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
-                <li><strong class="text-gray-900">Improved Efficiency:</strong> By digitizing key workflows, we significantly reduced the time spent on manual, paper-based document review and approval.</li>
-                <li><strong class="text-gray-900">Enhanced Collaboration:</strong> The platform became a single source of truth, enabling real-time collaboration and providing a transparent, unified view of project status for all team members.</li>
-                <li><strong class="text-gray-900">Increased Confidence:</strong> The new, intuitive interface and streamlined processes helped users feel more confident and in control, reducing friction and the need for external spreadsheets.</li>
-                <li><strong class="text-gray-900">Modernized User Experience:</strong> The new design system established a foundation for future scalability, ensuring visual and functional consistency across new and upcoming features.</li>
-            </ul>
+        </section>
+
+        <!-- Conclusion & Learnings -->
+        <section class="mb-16">
+            <h2 class="section-header">Conclusion & Key Learnings</h2>
+            <p class="text-lg">
+                Vektor was a great exercise in applying a full UX process to a problem I had experienced myself. It taught me the value of a lean, agile approach to prototyping and reinforced the importance of collaborative design. This project showcases my ability to not only identify a problem but to also design and build a potential solution from start to finish.
+            </p>
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-200 py-6 text-center text-gray-600">
-        <p>This case study is from my work for DynamixE, Inc.</p>
+        <p>This case study represents a personal project and is for portfolio purposes only.</p>
     </footer>
 
 </body>
