@@ -325,7 +325,7 @@
                     toggleText.textContent = 'Cursor ON';
                     toggleEmoji.textContent = '🦋';
                     localStorage.setItem('butterflyCursorEnabled', 'true');
-                    butterflyContainer.visibility = visible;
+                    
                     requestAnimationFrame(animate); // Start animation if enabled
                 } else {
                     document.body.classList.remove('cursor-enabled');
@@ -333,7 +333,7 @@
                     toggleText.textContent = 'Cursor OFF';
                     toggleEmoji.textContent = '👆';
                     localStorage.setItem('butterflyCursorEnabled', 'false');
-                    butterflyContainer.visibility = hidden;
+                    
                     // Stop the animation by not calling requestAnimationFrame
                 }
             }
