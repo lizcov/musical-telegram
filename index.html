@@ -10,14 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* These styles are from the butterfly cursor.
+        /* These styles are for the butterfly cursor.
            The 'overflow: hidden;' and 'height: 100vh;' have been removed
            to allow your portfolio to scroll properly. */
         html, body {
             width: 100vw;
             background-color: #f7f3e9;
-            cursor: none;
             font-family: 'Inter', sans-serif;
+            transition: cursor 0.3s ease-in-out;
+        }
+        
+        /* Default cursor state when butterfly is enabled */
+        .cursor-enabled, .cursor-enabled body {
+            cursor: none;
+        }
+
+        /* Standard cursor state when butterfly is disabled */
+        .cursor-disabled, .cursor-disabled body {
+            cursor: auto !important;
         }
 
         .content {
@@ -67,7 +77,8 @@
         }
 
         @media (max-width: 768px) {
-            body {
+             /* Automatically disable on mobile */
+            .cursor-enabled body {
                 cursor: default;
             }
             .butterfly-container {
@@ -77,7 +88,6 @@
 
         /* Your existing professional styles */
         body {
-            font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -150,7 +160,7 @@
 
     <main class="container mx-auto px-4 py-8">
         <!-- Disclaimer Banner -->
-          <div class="bg-gradient-to-r from-purple-200 to-blue-200 p-4 text-center text-sm rounded-lg mb-8">
+            <div class="bg-gradient-to-r from-purple-200 to-blue-200 p-4 text-center text-sm rounded-lg mb-8">
             <p class="text-gray-800"><b>Pardon the pixel dust! This site is a work in progress, with new projects and updates coming soon, as of Sept. 2025.</b></p>
         </div>
         
@@ -241,7 +251,7 @@
                 <!-- Link to UX Audits page -->
                 <!--    <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"> -->
                 <!--    <img src="photos/15.png" alt="UX Audit examples" class="w-full h-auto object-cover"> -->
-                <!--    <div class="p-6">                <h3 class="project-title text-xl mb-2">UX Audits & Critiques</h3>                <p class="text-sm text-gray-600 mb-4">A collection of short, focused UX audits.</p>                <a href="ux-audits/" class="inline-flex items-center text-blue-600 hover:underline">                  View Examples                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />                   </svg>                 </a>                </div>                </div> -->
+                <!--    <div class="p-6">             <h3 class="project-title text-xl mb-2">UX Audits & Critiques</h3>             <p class="text-sm text-gray-600 mb-4">A collection of short, focused UX audits.</p>             <a href="ux-audits/" class="inline-flex items-center text-blue-600 hover:underline">                 View Examples                     <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />                    </svg>                  </a>             </div>          </div> -->
             </div>
         </section>
 
@@ -266,6 +276,14 @@
         </section>
 
     </main>
+    
+    <!-- Floating Cursor Toggle Button -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <button id="toggle-cursor-btn" class="bg-white text-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+            <span id="cursor-toggle-emoji" class="text-lg">🦋</span>
+            <span id="cursor-toggle-text" class="ml-2 font-medium">Cursor ON</span>
+        </button>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-50 py-6 text-center text-gray-600">
@@ -277,6 +295,9 @@
             const canvas = document.getElementById('cursor-canvas');
             const ctx = canvas.getContext('2d');
             const butterflyContainer = document.getElementById('butterfly-container');
+            const toggleBtn = document.getElementById('toggle-cursor-btn');
+            const toggleText = document.getElementById('cursor-toggle-text');
+            const toggleEmoji = document.getElementById('cursor-toggle-emoji');
             
             let mouseX = window.innerWidth / 2;
             let mouseY = window.innerHeight / 2;
@@ -285,6 +306,10 @@
             let frameCount = 0;
             const particles = [];
 
+            // Add new logic to control the cursor state
+            const isDesktop = window.innerWidth > 768;
+            let isCursorEnabled = isDesktop && (localStorage.getItem('butterflyCursorEnabled') !== 'false');
+
             function resizeCanvas() {
                 canvas.width = window.innerWidth;
                 canvas.height = window.innerHeight;
@@ -292,56 +317,94 @@
             window.addEventListener('resize', resizeCanvas);
             resizeCanvas();
 
-            if (window.innerWidth > 768) {
-                document.addEventListener('mousemove', (e) => {
-                    targetX = e.clientX;
-                    targetY = e.clientY;
-                });
+            function setCursorState(enabled) {
+                isCursorEnabled = enabled;
+                if (enabled) {
+                    document.body.classList.remove('cursor-disabled');
+                    document.body.classList.add('cursor-enabled');
+                    toggleText.textContent = 'Cursor ON';
+                    toggleEmoji.textContent = '🦋';
+                    localStorage.setItem('butterflyCursorEnabled', 'true');
+                    requestAnimationFrame(animate); // Start animation if enabled
+                } else {
+                    document.body.classList.remove('cursor-enabled');
+                    document.body.classList.add('cursor-disabled');
+                    toggleText.textContent = 'Cursor OFF';
+                    toggleEmoji.textContent = '👆';
+                    localStorage.setItem('butterflyCursorEnabled', 'false');
+                    // Stop the animation by not calling requestAnimationFrame
+                }
+            }
 
-                function drawSparkle(particle) {
-                    ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`;
-                    ctx.beginPath();
-                    ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-                    ctx.fill();
+            // Set initial state based on local storage and device type
+            if (isDesktop) {
+                setCursorState(isCursorEnabled);
+            } else {
+                setCursorState(false); // Force disable on mobile
+            }
+            
+            document.addEventListener('mousemove', (e) => {
+                targetX = e.clientX;
+                targetY = e.clientY;
+            });
+
+            // Handle button click
+            toggleBtn.addEventListener('click', () => {
+                setCursorState(!isCursorEnabled);
+            });
+
+            function drawSparkle(particle) {
+                ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`;
+                ctx.beginPath();
+                ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            function animate() {
+                // Only run animation if cursor is enabled
+                if (!isCursorEnabled) {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas on disable
+                    return;
                 }
 
-                function animate() {
-                    mouseX += (targetX - mouseX) * 0.1;
-                    mouseY += (targetY - mouseY) * 0.1;
+                mouseX += (targetX - mouseX) * 0.1;
+                mouseY += (targetY - mouseY) * 0.1;
 
-                    butterflyContainer.style.left = `${mouseX}px`;
-                    butterflyContainer.style.top = `${mouseY}px`;
-                    butterflyContainer.style.transform = `translate(-50%, -50%)`;
-                    
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-                    if (frameCount % 3 === 0) {
-                        particles.push({
-                            x: mouseX,
-                            y: mouseY,
-                            size: 1.5 + Math.random() * 2,
-                            opacity: 1,
-                            decay: Math.random() * 0.02 + 0.01,
-                        });
-                    }
-
-                    for (let i = particles.length - 1; i >= 0; i--) {
-                        const p = particles[i];
-                        p.opacity -= p.decay;
-                        p.size *= 0.98;
-
-                        if (p.opacity <= 0.05) {
-                            particles.splice(i, 1);
-                        } else {
-                            drawSparkle(p);
-                        }
-                    }
-
-                    frameCount++;
-                    requestAnimationFrame(animate);
-                }
+                butterflyContainer.style.left = `${mouseX}px`;
+                butterflyContainer.style.top = `${mouseY}px`;
+                butterflyContainer.style.transform = `translate(-50%, -50%)`;
                 
-                animate();
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                if (frameCount % 3 === 0) {
+                    particles.push({
+                        x: mouseX,
+                        y: mouseY,
+                        size: 1.5 + Math.random() * 2,
+                        opacity: 1,
+                        decay: Math.random() * 0.02 + 0.01,
+                    });
+                }
+
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    const p = particles[i];
+                    p.opacity -= p.decay;
+                    p.size *= 0.98;
+
+                    if (p.opacity <= 0.05) {
+                        particles.splice(i, 1);
+                    } else {
+                        drawSparkle(p);
+                    }
+                }
+
+                frameCount++;
+                requestAnimationFrame(animate);
+            }
+            
+            // Start the animation loop initially if enabled
+            if (isCursorEnabled) {
+                requestAnimationFrame(animate);
             }
         });
     </script>
