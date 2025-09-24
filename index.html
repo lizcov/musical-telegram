@@ -101,40 +101,45 @@
             color: #333;
             font-weight: 600;
         }
+        .testimonial-card {
+            background-color: #fefce8;
+            border-left: 4px solid #facc15;
+        }
     </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white text-gray-900 cursor-disabled">
 
     <canvas id="cursor-canvas"></canvas>
 
     <div class="butterfly-container" id="butterfly-container">
         <div class="butterfly">
             <svg width="69" height="67" viewBox="0 0 69 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.0334 27.0624C6.0334 27.0624 2.63026 23.5334 1.47607 20.4309C-0.32648 15.5855 -0.650897 11.3574 1.47607 6.72599C1.47607 6.72599 4.2806 -3.88433 21.4582 10.7048C31.8688 19.5468 28.4694 34.1359 28.4694 34.1359C17.602 38.1147 6.0334 27.0624 6.0334 27.0624Z" fill="url(#paint0_linear_1_66)"/>
-                <path d="M28.9706 38.3401C27.4851 48.107 21.1795 53.2587 21.1795 53.2587C16.3947 56.4978 9.07152 56.4519 7.36821 48.4321C5.59755 40.0952 7.14906 39.3299 14.9171 33.9553C22.6851 28.5806 30.456 28.5732 28.9706 38.3401Z" fill="url(#paint1_linear_1_66)"/>
-                <path d="M57.6721 28.5481C57.6721 28.5481 62.3238 24.323 63.7954 20.7374C66.0937 15.1376 66.3207 10.3387 63.0331 5.25618C63.0331 5.25618 58.4477 -6.53263 34.7889 11.1524C20.4502 21.8706 26.1043 38.1122 26.1043 38.1122C41.8069 41.8444 57.6721 28.5481 57.6721 28.5481Z" fill="url(#paint2_linear_1_66)"/>
-                <path d="M25.9007 41.2615C28.5428 52.2744 37.7235 57.6999 37.7235 57.6999C44.6525 61.0543 54.9769 60.4935 56.9294 51.2476C58.9591 41.6361 56.7283 40.8727 45.4728 35.295C34.2173 29.7173 23.2586 30.2485 25.9007 41.2615Z" fill="url(#paint3_linear_1_66)"/>
+                <path d="M6.0334 27.0624C6.0334 27.0624 2.63026 23.5334 1.47607 20.4309C-0.32648 15.5855 -0.650897 11.3574 1.47607 6.72599C1.47607 6.72599 4.2806 -3.88433 21.4582 10.7048C31.8688 19.5468 28.4694 34.1359 28.4694 34.1359C17.602 38.1147 6.0334 27.0624 6.0334 27.0624Z" fill="url(#paint0_linear_1_66)"></path>
+                <path d="M28.9706 38.3401C27.4851 48.107 21.1795 53.2587 21.1795 53.2587C16.3947 56.4978 9.07152 56.4519 7.36821 48.4321C5.59755 40.0952 7.14906 39.3299 14.9171 33.9553C22.6851 28.5806 30.456 28.5732 28.9706 38.3401Z" fill="url(#paint1_linear_1_66)"></path>
+                <path d="M57.6721 28.5481C57.6721 28.5481 62.3238 24.323 63.7954 20.7374C66.0937 15.1376 66.3207 10.3387 63.0331 5.25618C63.0331 5.25618 58.4477 -6.53263 34.7889 11.1524C20.4502 21.8706 26.1043 38.1122 26.1043 38.1122C41.8069 41.8444 57.6721 28.5481 57.6721 28.5481Z" fill="url(#paint2_linear_1_66)"></path>
+                <path d="M25.9007 41.2615C28.5428 52.2744 37.7235 57.6999 37.7235 57.6999C44.6525 61.0543 54.9769 60.4935 56.9294 51.2476C58.9591 41.6361 56.7283 40.8727 45.4728 35.295C34.2173 29.7173 23.2586 30.2485 25.9007 41.2615Z" fill="url(#paint3_linear_1_66)"></path>
                 <defs>
                     <linearGradient id="paint0_linear_1_66" x1="-5.5" y1="25.5" x2="38.8678" y2="15.3476" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#A45DC2"/>
-                        <stop offset="1" stop-color="#7700A7"/>
+                        <stop stop-color="#A45DC2"></stop>
+                        <stop offset="1" stop-color="#7700A7"></stop>
                     </linearGradient>
                     <linearGradient id="paint1_linear_1_66" x1="39" y1="32" x2="1.67221" y2="42.7806" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#7700A7"/>
-                        <stop offset="1" stop-color="#A45DC2"/>
+                        <stop stop-color="#7700A7"></stop>
+                        <stop offset="1" stop-color="#A45DC2"></stop>
                     </linearGradient>
                     <linearGradient id="paint2_linear_1_66" x1="34.6554" y1="8.44165" x2="58.3331" y2="31.8054" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#A45DC2"/>
-                        <stop offset="1" stop-color="#7700A7"/>
+                        <stop stop-color="#A45DC2"></stop>
+                        <stop offset="1" stop-color="#7700A7"></stop>
                     </linearGradient>
                     <linearGradient id="paint3_linear_1_66" x1="-1.15489" y1="25.0841" x2="62.2812" y2="52.2147" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#A45DC2"/>
-                        <stop offset="1" stop-color="#7700A7"/>
+                        <stop stop-color="#A45DC2"></stop>
+                        <stop offset="1" stop-color="#7700A7"></stop>
                     </linearGradient>
                 </defs>
             </svg>
         </div>
     </div>
+
     <!-- Header & Navigation -->
     <header class="bg-white py-6">
         <div class="container mx-auto px-4 flex justify-between items-center">
@@ -149,7 +154,7 @@
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-gray-900 transition-colors duration-200">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
         </div>
@@ -163,22 +168,26 @@
 
     <main class="container mx-auto px-4 py-8">
         <!-- Disclaimer Banner -->
-            <div class="bg-gradient-to-r from-purple-200 to-blue-200 p-4 text-center text-sm rounded-lg mb-8">
+        <div class="bg-gradient-to-r from-purple-200 to-blue-200 p-4 text-center text-sm rounded-lg mb-8">
             <p class="text-gray-800"><b>Pardon the pixel dust! This site is a work in progress, with new projects and updates coming soon, as of Sept. 2025.</b></p>
         </div>
         
-        <!-- Hero Section -->
+        <!-- Updated Hero Section -->
         <section id="hero" class="text-center py-16 md:py-24">
             <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-                Designer / Creative Strategist <br class="hidden md:inline">
-                Crafting Intuitive Interactive Digital Experiences.
+                Your favorite product designer's favorite product designer.
             </h1>
             <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                I help companies solve complex problems at scale by designing user-centered products that are simple, effective, and beautiful.
+                Crafting intuitive interactive digital experiences.
             </p>
-            <p class="mt-4 text-md md:text-xl text-gray-600 max-w-2xl mx-auto">
-                UX Research • UX / UI Design • Product Design
-            </p>
+            <div class="mt-4 max-w-2xl mx-auto">
+                <div class="flex flex-wrap justify-center space-x-2 sm:space-x-4 space-y-2 sm:space-y-0 text-sm md:text-md">
+                    <span class="bg-white text-gray-900 font-medium py-2 px-4 rounded-full border border-gray-300">UX Research</span>
+                    <span class="bg-white text-gray-900 font-medium py-2 px-4 rounded-full border border-gray-300">UX / UI Design</span>
+                    <span class="bg-white text-gray-900 font-medium py-2 px-4 rounded-full border border-gray-300">Product Design</span>
+                    <span class="bg-white text-gray-900 font-medium py-2 px-4 rounded-full border border-gray-300">Front-end Development</span>
+                </div>
+            </div>
             <div class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="#work" class="bg-gray-900 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-200">View My Work</a>
                 <a href="mailto:lizcovi@proton.me" class="bg-white text-gray-900 font-medium py-3 px-6 rounded-lg border border-gray-300 hover:bg-gray-100 transition-colors duration-200">Get in Touch</a>
@@ -194,10 +203,27 @@
                     <p>I have a strong foundation in user-centered design principles and a working knowledge of front-end development, which allows me to effectively collaborate with engineers and bridge the gap between design and technical feasibility. My goal is to create thoughtful and impactful digital experiences that empower users and drive meaningful change.</p>
                     <p>I value people and prefer to work with Mission Driven organizations as I want to use my skills and talents to make the world a better place, little by little, every single day.</p>
                 </div>
-                <!-- Profile Picture -->
-                <!-- <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="photos/liz.png" alt="A portrait of Liz Covington, creative strategist and designer." class="w-full h-auto object-cover">
-                </div>-->
+                <!-- Profile Picture - Placeholder -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex-shrink-0 w-64 h-64">
+                     <img src="https://placehold.co/256x256/E5E7EB/4B5563?text=Your+Photo+Here" alt="A portrait of Liz Covington, creative strategist and designer." class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 border-t border-gray-200">
+            <h2 class="text-3xl font-bold text-center mb-12">What People Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6 rounded-xl shadow-lg">
+                    <p class="text-lg text-gray-800 leading-relaxed mb-4">"Liz is an incredibly thoughtful and detail-oriented designer. Her ability to translate complex user needs into elegant solutions is remarkable. She was a key player on our team and I'd work with her again in a heartbeat."</p>
+                    <p class="font-medium text-gray-900">- Jane Doe, Product Manager</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6 rounded-xl shadow-lg">
+                    <p class="text-lg text-gray-800 leading-relaxed mb-4">"Working with Liz was a fantastic experience. Her insights from user research completely changed our product roadmap for the better. Her communication is clear, and her passion for her work is contagious."</p>
+                    <p class="font-medium text-gray-900">- John Smith, CEO</p>
+                </div>
             </div>
         </section>
 
@@ -208,14 +234,14 @@
                 
                 <!-- Project Card 1: Vektor -->
                 <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <!--<img src="photos/vektor-tile-cover.png" alt="Vektor Project Image" class="w-full h-auto object-cover"> -->
+                    <img src="https://placehold.co/600x400/D1D5DB/4B5563?text=Vektor+Project+Image" alt="Vektor Project Image" class="w-full h-auto object-cover">
                     <div class="p-6">
                         <h3 class="project-title text-xl mb-2">Vektor: Digitizing Regulated Processes</h3>
                         <p class="text-sm text-gray-600 mb-4">UX/UI Design, Usability Testing, Developer Collaboration</p>
                         <a href="vektor/" class="inline-flex items-center text-blue-600 hover:underline">
                             View Case Study
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
@@ -223,14 +249,14 @@
 
                 <!-- Project Card 2: Hazel -->
                 <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <!-- <img src="photos/14.png" alt="Hazel Project Image" class="w-full h-auto object-cover"> -->
+                    <img src="https://placehold.co/600x400/D1D5DB/4B5563?text=Hazel+Project+Image" alt="Hazel Project Image" class="w-full h-auto object-cover">
                     <div class="p-6">
                         <h3 class="project-title text-xl mb-2">Hazel: Gamifying Carbon Removal</h3>
                         <p class="text-sm text-gray-600 mb-4">User Research, Community Building, Low-Fi Prototyping</p>
                         <a href="hazel/" class="inline-flex items-center text-blue-600 hover:underline">
                             View Case Study
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
@@ -238,27 +264,21 @@
 
                 <!-- Project Card 3: Media vs. Reality -->
                 <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <!-- <img src="photos/vanlife.png" alt="Media vs. Reality Project Image" class="w-full h-auto object-cover"> -->
+                    <img src="https://placehold.co/600x400/D1D5DB/4B5563?text=Media+vs.+Reality+Project+Image" alt="Media vs. Reality Project Image" class="w-full h-auto object-cover">
                     <div class="p-6">
                         <h3 class="project-title text-xl mb-2">Media vs. Reality</h3>
                         <p class="text-sm text-gray-600 mb-4">Research, Information Architecture, Storytelling</p>
                         <a href="research-doc/" class="inline-flex items-center text-blue-600 hover:underline">
                             View Case Study
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
-
-                <!-- Link to UX Audits page -->
-                <!--    <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"> -->
-                <!--    <img src="photos/15.png" alt="UX Audit examples" class="w-full h-auto object-cover"> -->
-                <!--    <div class="p-6">             <h3 class="project-title text-xl mb-2">UX Audits & Critiques</h3>             <p class="text-sm text-gray-600 mb-4">A collection of short, focused UX audits.</p>             <a href="ux-audits/" class="inline-flex items-center text-blue-600 hover:underline">                 View Examples                     <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />                    </svg>                  </a>             </div>          </div> -->
             </div>
         </section>
 
-        
         <!-- Contact Section -->
         <section id="contact" class="py-16 border-t border-gray-200">
             <div class="max-w-2xl mx-auto text-center">
@@ -270,7 +290,6 @@
                     <a href="mailto:lizcovi@proton.me" class="bg-gray-900 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-200">
                         Say Hello
                     </a>
-                    <!-- IMPORTANT: Replace the placeholder URL with your actual LinkedIn profile URL. -->
                     <a href="https://www.linkedin.com/in/lizsoos/" target="_blank" class="bg-white text-gray-900 font-medium py-3 px-6 rounded-lg border border-gray-300 hover:bg-gray-100 transition-colors duration-200">
                         LinkedIn
                     </a>
@@ -283,8 +302,8 @@
     <!-- Floating Cursor Toggle Button -->
     <div class="fixed bottom-4 right-4 z-50">
         <button id="toggle-cursor-btn" class="bg-white text-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
-            <span id="cursor-toggle-emoji" class="text-lg">🦋</span>
-            <span id="cursor-toggle-text" class="ml-2 font-medium">Cursor ON</span>
+            <span id="cursor-toggle-emoji" class="text-lg">👆</span>
+            <span id="cursor-toggle-text" class="ml-2 font-medium">Cursor OFF</span>
         </button>
     </div>
 
@@ -329,97 +348,95 @@
                     toggleEmoji.textContent = '🦋';
                     localStorage.setItem('butterflyCursorEnabled', 'true');
                     
-                    requestAnimationFrame(animate); // Start animation if enabled
+                    requestAnimationFrame(animate); // Start animation
                 } else {
                     document.body.classList.remove('cursor-enabled');
                     document.body.classList.add('cursor-disabled');
                     toggleText.textContent = 'Cursor OFF';
                     toggleEmoji.textContent = '👆';
                     localStorage.setItem('butterflyCursorEnabled', 'false');
-                    
-                    // Stop the animation by not calling requestAnimationFrame
                 }
+                // Toggle visibility of the butterfly container
+                butterflyContainer.style.display = enabled ? 'block' : 'none';
             }
 
-            // Set initial state based on local storage and device type
-            if (isDesktop) {
-                setCursorState(isCursorEnabled);
-            } else {
-                setCursorState(false); // Force disable on mobile
-            }
-            
-            document.addEventListener('mousemove', (e) => {
-                targetX = e.clientX;
-                targetY = e.clientY;
-            });
-
-            // Handle button click
             toggleBtn.addEventListener('click', () => {
                 setCursorState(!isCursorEnabled);
             });
 
-            function drawSparkle(particle) {
-                ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`;
-                ctx.beginPath();
-                ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-                ctx.fill();
+            // Set initial state
+            setCursorState(isCursorEnabled);
+            
+            // Only add event listeners if the cursor is enabled
+            if (isCursorEnabled) {
+                 document.addEventListener('mousemove', (e) => {
+                     targetX = e.clientX;
+                     targetY = e.clientY;
+                 });
             }
 
-            function animate() {
-                // Only run animation if cursor is enabled
-                if (!isCursorEnabled) {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas on disable
-                    return;
+
+            class Particle {
+                constructor(x, y) {
+                    this.x = x;
+                    this.y = y;
+                    this.size = Math.random() * 5 + 1;
+                    this.speedX = Math.random() * 3 - 1.5;
+                    this.speedY = Math.random() * 3 - 1.5;
+                    this.color = `hsl(${Math.random() * 360}, 100%, 50%)`;
                 }
+                update() {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+                    if (this.size > 0.2) this.size -= 0.1;
+                }
+                draw() {
+                    ctx.fillStyle = this.color;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+            
+            function animate() {
+                if (!isCursorEnabled) return;
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
 
                 mouseX += (targetX - mouseX) * 0.1;
                 mouseY += (targetY - mouseY) * 0.1;
 
-                butterflyContainer.style.left = `${mouseX}px`;
-                butterflyContainer.style.top = `${mouseY}px`;
-                butterflyContainer.style.transform = `translate(-50%, -50%)`;
-                
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                butterflyContainer.style.left = `${mouseX - butterflyContainer.offsetWidth / 2}px`;
+                butterflyContainer.style.top = `${mouseY - butterflyContainer.offsetHeight / 2}px`;
 
-                if (frameCount % 3 === 0) {
-                    particles.push({
-                        x: mouseX,
-                        y: mouseY,
-                        size: 1.5 + Math.random() * 2,
-                        opacity: 1,
-                        decay: Math.random() * 0.02 + 0.01,
-                    });
-                }
-
-                for (let i = particles.length - 1; i >= 0; i--) {
-                    const p = particles[i];
-                    p.opacity -= p.decay;
-                    p.size *= 0.98;
-
-                    if (p.opacity <= 0.05) {
-                        particles.splice(i, 1);
-                    } else {
-                        drawSparkle(p);
+                // Update and draw particles
+                particles.forEach((p, index) => {
+                    p.update();
+                    p.draw();
+                    if (p.size <= 0.2) {
+                        particles.splice(index, 1);
                     }
+                });
+                
+                // Add a new particle every few frames
+                if (frameCount % 2 === 0) {
+                    particles.push(new Particle(mouseX, mouseY));
                 }
 
                 frameCount++;
                 requestAnimationFrame(animate);
             }
-            
-            // Start the animation loop initially if enabled
-            if (isCursorEnabled) {
-                requestAnimationFrame(animate);
-            }
-        });
-    </script>
-    <!-- Mobile menu JavaScript -->
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Function to control the mobile menu
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
         });
     </script>
 </body>
