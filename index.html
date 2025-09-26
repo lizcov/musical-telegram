@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liz Covington | UX/UI Designer</title>
-    <meta name="description" content="Liz Covington's portfolio showcasing UX/UI design and creative strategy for mission-driven organizations.">
-
+    <!-- Use a single Tailwind script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon link -->
+    <link rel="icon" type="image/x-icon" href="FavIcon.svg">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="icon" type="image/x-icon" href="Favicon.svg">
-
-    <link rel="stylesheet" href="./dist/output.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* These styles are for the butterfly cursor.
+           The 'overflow: hidden;' and 'height: 100vh;' have been removed
+           to allow your portfolio to scroll properly. */
         html, body {
             width: 100vw;
             background-color: #f7f3e9;
@@ -79,7 +80,7 @@
         }
 
         @media (max-width: 768px) {
-            /* Automatically disable on mobile */
+             /* Automatically disable on mobile */
             .cursor-enabled body {
                 cursor: default;
             }
@@ -93,6 +94,15 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
+        .card-bg {
+            background-color: #f8f9fa;
+        }
+        .project-title {
+            color: #333;
+            font-weight: 600;
+        }
+    </style>
+</head>
 <body class="bg-white text-gray-900">
 
     <canvas id="cursor-canvas"></canvas>
