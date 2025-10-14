@@ -1,292 +1,296 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vektor | Liz Covington</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJc5n/BpI4O3N/Mdfw/S3z4fI3wT2dE1t1Lp+9+fT40zQy5Zt3iA2rY0y5I7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            line-height: 1.6;
-        }
-        .case-study-container {
-            max-width: 960px;
-        }
-        .section-header {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            border-bottom: 2px solid theme('colors.blue.100');
-            padding-bottom: 0.5rem;
-            /* Ensure the header text is black */
-            color: theme('colors.gray.900'); 
-        }
-        .project-image-placeholder {
-            width: 100%;
-            height: auto;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: theme('colors.gray.200');
-            color: theme('colors.gray.700');
-            font-style: italic;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            padding: 1rem;
-            text-align: center;
-        }
-        .key-data-card {
-            background-color: theme('colors.white');
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-        .key-data-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .text-blue-strategic {
-            color: #1E40AF; /* A darker, professional blue (Kept for thematic accent) */
-        }
-        /* Style for embedded iframe */
-        .responsive-iframe-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            border-radius: 0.75rem;
-        }
-        .responsive-iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 0.75rem;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vektor | Liz Covington</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJc5n/BpI4O3N/Mdfw/S3z4fI3wT2dE1t1Lp+9+fT40zQy5Zt3iA2rY0y5I7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+        }
+        .case-study-container {
+            max-width: 960px;
+        }
+        .section-header {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            border-bottom: 2px solid theme('colors.blue.100');
+            padding-bottom: 0.5rem;
+            /* Ensure the header text is black */
+            color: theme('colors.gray.900'); 
+        }
+        .project-image-placeholder {
+            width: 100%;
+            height: auto;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: theme('colors.gray.200');
+            color: theme('colors.gray.700');
+            font-style: italic;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1rem;
+            text-align: center;
+        }
+        .key-data-card {
+            background-color: theme('colors.white');
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .key-data-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .text-blue-strategic {
+            color: #1E40AF; /* A darker, professional blue (Kept for thematic accent) */
+        }
+        /* Style for embedded iframe */
+        .responsive-iframe-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 0.75rem;
+        }
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.75rem;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-900"> <!-- Changed text-gray-800 to text-gray-900 -->
 
-    <!-- Project Header -->
-    <header class="bg-white py-12 md:py-16 border-b border-gray-200">
-        <div class="case-study-container mx-auto px-4">
-            <nav class="mb-8">
-                <a href="../#work" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">
-                    <i class="fas fa-arrow-left mr-2"></i>Back to Projects
-                </a>
-            </nav>
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Vektor: Strategic Redesign for Enterprise Adoption</h1>
-            <p class="text-xl text-gray-800 max-w-3xl"> <!-- Updated text-gray-600 to text-gray-800 -->
-                Redefining the UX/UI of a complex, niche SaaS application to drive internal adoption, align engineering teams, and prepare the product for external market growth—all within an environment of limited formal UX research.
-            </p>
-        </div>
-    </header>
+    <!-- Project Header -->
+    <header class="bg-white py-12 md:py-16 border-b border-gray-200">
+        <div class="case-study-container mx-auto px-4">
+            <nav class="mb-8">
+                <a href="../#work" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Projects
+                </a>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Vektor: Strategic Redesign for Enterprise Adoption</h1>
+            <p class="text-xl text-gray-800 max-w-3xl"> <!-- Updated text-gray-600 to text-gray-800 -->
+                Redefining the UX/UI of a complex, niche SaaS application to drive internal adoption, align engineering teams, and prepare the product for external market growth—all within an environment of limited formal UX research.
+            </p>
+        </div>
+    </header>
 
-    <main class="case-study-container mx-auto px-4 py-12 md:py-16">
+    <main class="case-study-container mx-auto px-4 py-12 md:py-16">
 
-        <!-- Confidentiality Notice -->
-        <section class="mb-16 bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600 shadow-lg">
-            <h3 class="font-bold text-gray-900 mb-2 text-xl flex items-center">
-                <i class="fas fa-shield-alt text-blue-600 mr-3"></i> Confidentiality Notice
-            </h3>
-            <p class="text-gray-800"> <!-- Updated text-gray-700 to text-gray-800 -->
-                To protect proprietary and confidential information, details regarding this project have been generalized. All included visuals are non-proprietary login flows or abstracted artifacts. For a more in-depth discussion and a full walkthrough of the design system, please contact me directly.
-            </p>
-        </section>
+        <!-- Confidentiality Notice -->
+        <section class="mb-16 bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600 shadow-lg">
+            <h3 class="font-bold text-gray-900 mb-2 text-xl flex items-center">
+                <i class="fas fa-shield-alt text-blue-600 mr-3"></i> Confidentiality Notice
+            </h3>
+            <p class="text-gray-800"> <!-- Updated text-gray-700 to text-gray-800 -->
+                To protect proprietary and confidential information, details regarding this project have been generalized. All included visuals are non-proprietary login flows or abstracted artifacts. For a more in-depth discussion and a full walkthrough of the design system, please contact me directly.
+            </p>
+        </section>
 
-        <!-- Project Details & Role -->
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div>
-                <h3 class="font-bold text-blue-strategic mb-2 text-xl">My Core Role</h3>
-                <p class="text-lg font-semibold text-gray-900">Lead UX/UI Designer & Strategic Generalist</p>
-            </div>
-            <div>
-                <h3 class="font-bold text-blue-strategic mb-2 text-xl">Team Structure</h3>
-                <p class="text-lg text-gray-900">CEO Stakeholder, 1 Product Manager/QA Engineer, 1 Lead Developer, 3–6 Developers.</p>
-            </div>
-            <div>
-                <h3 class="font-bold text-blue-strategic mb-2 text-xl">My Contributions</h3>
-                <ul class="list-disc list-inside space-y-1 text-gray-800"> <!-- Updated text-gray-700 to text-gray-800 -->
-                    <li>Design System Definition (WCAG AA/AAA)</li>
-                    <li>Information Architecture & Flow Mapping</li>
-                    <li>Stakeholder & Dev Liaison</li>
-                    <li>Timesheets & Expense Module Redesign</li>
-                    <li>Content Strategy & Sales Enablement</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- The Challenge & Strategic Pivot -->
-        <section class="mb-16">
-            <h2 class="section-header">The Challenge & The Strategic Pivot</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="lg:col-span-2 text-lg text-gray-800 space-y-4"> <!-- Updated text-gray-700 to text-gray-800 -->
-                    <p>The primary mandate was to take a powerful, in-house enterprise tool—built by industry experts—and dramatically improve its aesthetics and user experience. My CEO stakeholder wanted Vektor to be <b>"pretty"</b> and intuitive enough to be successfully launched as a commercial SaaS product.</p>
-                    <p class="font-bold text-blue-strategic">The Constraint: Resourceful Design</p>
-                    <p>Unlike typical projects, formal UX research was low priority. Recognizing that the app's functionality was already superior to competitors, I made a <b>strategic pivot</b>: my goal shifted from rigorous UXR to <b>prioritizing aesthetic quality and structural consistency</b> to solve the #1 business priority: <b>user adoption</b>. Success hinged on my ability to be a design system architect, a proxy user, and a highly agile dev partner.</p>
-                </div>
-                <div class="lg:col-span-1">
-                    <div class="key-data-card h-full flex flex-col justify-center bg-blue-700 text-white">
-                        <p class="text-sm font-semibold mb-2 opacity-80">Design Success Metric</p>
-                        <p class="text-5xl font-extrabold leading-none">100%</p>
-                        <p class="mt-3 font-medium">Increase in internal weekly active users via mandatory Timesheets Module onboarding.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Project Details & Role -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div>
+                <h3 class="font-bold text-blue-strategic mb-2 text-xl">My Core Role</h3>
+                <p class="text-lg font-semibold text-gray-900">Lead UX/UI Designer & Strategic Generalist</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-blue-strategic mb-2 text-xl">Team Structure</h3>
+                <p class="text-lg text-gray-900">CEO Stakeholder, 1 Product Manager/QA Engineer, 1 Lead Developer, 3–6 Developers.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-blue-strategic mb-2 text-xl">My Contributions</h3>
+                <ul class="list-disc list-inside space-y-1 text-gray-800"> <!-- Updated text-gray-700 to text-gray-800 -->
+                    <li>Design System Definition (WCAG AA/AAA)</li>
+                    <li>Information Architecture & Flow Mapping</li>
+                    <li>Stakeholder & Dev Liaison</li>
+                    <li>Timesheets & Expense Module Redesign</li>
+                    <li>Content Strategy & Sales Enablement</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- The Challenge & Strategic Pivot -->
+        <section class="mb-16">
+            <h2 class="section-header">The Challenge & The Strategic Pivot</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 text-lg text-gray-800 space-y-4"> <!-- Updated text-gray-700 to text-gray-800 -->
+                    <p>The primary mandate was to take a powerful, in-house enterprise tool—built by industry experts—and dramatically improve its aesthetics and user experience. My CEO stakeholder wanted Vektor to be <b>"pretty"</b> and intuitive enough to be successfully launched as a commercial SaaS product.</p>
+                    <p class="font-bold text-blue-strategic">The Constraint: Resourceful Design</p>
+                    <p>Unlike typical projects, formal UX research was low priority. Recognizing that the app's functionality was already superior to competitors, I made a <b>strategic pivot</b>: my goal shifted from rigorous UXR to <b>prioritizing aesthetic quality and structural consistency</b> to solve the #1 business priority: <b>user adoption</b>. Success hinged on my ability to be a design system architect, a proxy user, and a highly agile dev partner.</p>
+                </div>
+                <div class="lg:col-span-1">
+                    <div class="key-data-card h-full flex flex-col justify-center bg-blue-700 text-white">
+                        <p class="text-sm font-semibold mb-2 opacity-80">Design Success Metric</p>
+                        <p class="text-5xl font-extrabold leading-none">100%</p>
+                        <p class="mt-3 font-medium">Increase in internal weekly active users via mandatory Timesheets Module onboarding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Implementation & Artifacts -->
-        <section class="mb-16">
-            <h2 class="section-header">Implementation & Core Artifacts</h2>
-            <p class="text-lg text-gray-800 mb-8">My process was a rapid loop of brief, design, review, and ship, focusing on structural elements and key user friction points.</p>
+        <!-- Implementation & Artifacts -->
+        <section class="mb-16">
+            <h2 class="section-header">Implementation & Core Artifacts</h2>
+            <p class="text-lg text-gray-800 mb-8">My process was a rapid loop of brief, design, review, and ship, focusing on structural elements and key user friction points.</p>
 
-          <!-- The Process Section -->
-          <section class="mb-16">
-            <h2 class="section-header">My Process & Approach</h2>
-            <p class="text-lg text-gray-800 mb-8"> <!-- Updated text-gray-700 to text-gray-800 -->
-                Given the constraints of a niche B2B product and limited access to the target user base, I approached design with a resourceful, agile, and highly collaborative mindset.
-            </p>
-            <div class="space-y-12">
-    <!-- DESIGN PROCESS FLOW DIAGRAM REPLACEMENT -->
-    <div class="p-6 bg-white rounded-xl shadow-xl border border-gray-100">
-        <h3 class="text-3xl font-bold mb-6 text-gray-900 border-b pb-4">
-            Design Process Flow
-        </h3>
-        <!-- Using the uploaded PNG file path for immediate display -->
-        <img src="../photos/UI Process Flow.svg"
-             alt="Diagram illustrating the step-by-step UI design process."
-             class="w-full h-auto rounded-lg"
-        >
-        <p class="mt-4 text-sm text-gray-500 text-center">
-            The typical Vektor design process, from foundational research to collaborative feedback and final implementation.
-        </p>
-    </div>
-    <!-- END DESIGN PROCESS FLOW DIAGRAM REPLACEMENT -->
+          <!-- The Process Section -->
+          <section class="mb-16">
+            <h2 class="section-header">My Process & Approach</h2>
+            <p class="text-lg text-gray-800 mb-8"> <!-- Updated text-gray-700 to text-gray-800 -->
+                Given the constraints of a niche B2B product and limited access to the target user base, I approached design with a resourceful, agile, and highly collaborative mindset.
+            </p>
+            <div class="space-y-12">
+    <!-- DESIGN PROCESS FLOW DIAGRAM REPLACEMENT -->
+    <div class="p-6 bg-white rounded-xl shadow-xl border border-gray-100">
+        <h3 class="text-3xl font-bold mb-6 text-gray-900 border-b pb-4">
+            Design Process Flow
+        </h3>
+        <!-- Using the uploaded PNG file path for immediate display -->
+        <img src="uploaded:UI Process Flow.png-7bda2b13-dc6a-4e79-8e89-6dc4dcb826f2"
+             alt="Diagram illustrating the step-by-step UI design process."
+             class="w-full h-auto rounded-lg"
+        >
+        <p class="mt-4 text-sm text-gray-500 text-center">
+            The typical Vektor design process, from foundational research to collaborative feedback and final implementation.
+        </p>
+    </div>
+    <!-- END DESIGN PROCESS FLOW DIAGRAM REPLACEMENT -->
 </div>
 </section>
 
 <div class="space-y-12">
-          </section>
-          
-            <div class="space-y-12">
+          </section>
+          
+            <div class="space-y-12">
 
-                <!-- 1. Design Systems & Alignment -->
-                <div class="key-data-card">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-strategic flex items-center"><i class="fas fa-layer-group mr-3 text-2xl"></i> 1. Foundational Design Systems</h3>
-                    <p class="text-gray-800 mb-4">I took ownership of the design system, ensuring a high level of fidelity and alignment with <b>WCAG AA/AAA</b> contrast standards. This was critical for streamlining the handoff process and aligning new engineering hires.</p>
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                                width="800" 
-                                height="450" 
-                                src="https://embed.figma.com/proto/OJHNXhWm8nHR00dvMPmlNO/Text-field-example?page-id=0%3A1&node-id=1-402&viewport=40%2C321%2C0.22&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen>
-                            
-                        </iframe>
-                    <p class="text-sm text-gray-600 mt-2">The textfield component documentation served as the single source of truth for input interactions across all modules.</p>
-                </div>
+                <!-- 1. Design Systems & Alignment -->
+                <div class="key-data-card">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-strategic flex items-center"><i class="fas fa-layer-group mr-3 text-2xl"></i> 1. Foundational Design Systems</h3>
+                    <p class="text-gray-800 mb-4">I took ownership of the design system, ensuring a high level of fidelity and alignment with <b>WCAG AA/AAA</b> contrast standards. This was critical for streamlining the handoff process and aligning new engineering hires.</p>
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                                width="800" 
+                                height="450" 
+                                src="https://embed.figma.com/proto/OJHNXhWm8nHR00dvMPmlNO/Text-field-example?page-id=0%3A1&node-id=1-402&viewport=40%2C321%2C0.22&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen>
+                            
+                        </iframe>
+                    <p class="text-sm text-gray-600 mt-2">The textfield component documentation served as the single source of truth for input interactions across all modules.</p>
+                </div>
 
-                <!-- 2. System Mapping & IA -->
-                <div class="key-data-card">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-strategic flex items-center"><i class="fas fa-diagram-project mr-3 text-2xl"></i> 2. Complex User Flow Mapping</h3>
-                    <p class="text-gray-800 mb-4">For large modules, I created high-level user flow sketches to define the <b>Information Architecture</b> and account for all complex, multi-path user journeys before moving to high-fidelity mockups. </p>
-                    <div class="project-image-placeholder h-auto min-h-[300px]">
-                        <!-- Replaced with System Screen User Flow Sketch.png -->
-                        <img src="../photos/System Screen User Flow Sketch.png" alt="Hand-drawn sketch of system screen user flow" class="w-full h-auto object-contain rounded-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x300/f3f4f6/4b5563?text=System+Screen+User+Flow+Sketch.png+Failed+to+Load';">
-                    </div>
-                    <p class="text-sm text-gray-600 mt-2">A high-level sketch mapping the possible paths and architecture for a major module's main page.</p>
-                </div>
+                <!-- 2. System Mapping & IA -->
+                <div class="key-data-card">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-strategic flex items-center"><i class="fas fa-diagram-project mr-3 text-2xl"></i> 2. Complex User Flow Mapping</h3>
+                    <p class="text-gray-800 mb-4">For large modules, I created high-level user flow sketches to define the <b>Information Architecture</b> and account for all complex, multi-path user journeys before moving to high-fidelity mockups. </p>
+                    <div class="project-image-placeholder h-auto min-h-[300px]">
+                        <!-- Using the uploaded Systems Screen Sketch.jpg path -->
+                        <img src="uploaded:Systems Screen Sketch.jpg-4f01dc72-7f7a-4857-9e23-6c3dadf777ad" alt="Hand-drawn sketch of system screen user flow" class="w-full h-auto object-contain rounded-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x300/f3f4f6/4b5563?text=System+Screen+User+Flow+Sketch.png+Failed+to+Load';">
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">A high-level sketch mapping the possible paths and architecture for a major module's main page.</p>
+                </div>
 
-                <!-- 3. Detail-Oriented Execution -->
-                <div class="key-data-card">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-strategic flex items-center"><i class="fas fa-exclamation-triangle mr-3 text-2xl"></i> 3. Edge-Case Design & Error Handling</h3>
-                    <p class="text-gray-800 mb-4">By mapping out comlpex user flows and prototyping, we were able to find edge cases and potential user errors so we could give clear, human-centered feedback instead of generic errors in order to increase retention and user satisfaction.</p>
-                    <div class="project-image-placeholder h-64 border border-red-300 bg-red-50 p-0">
-                        <!-- Replaced with Error Message.svg -->
-                        <img src="../photos/Error Message.svg" alt="Error message design for max billable hours exceeded" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x300/fee2e2/991b1b?text=Error+Message.svg+Failed+to+Load';">
-                    </div>
-                    <p class="text-sm text-gray-600 mt-2">A clear, concise error message designed to guide users back to a successful workflow, based on real user pain points.</p>
-                </div>
+                <!-- 3. Detail-Oriented Execution - FIX APPLIED HERE -->
+                <div class="key-data-card">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-strategic flex items-center"><i class="fas fa-exclamation-triangle mr-3 text-2xl"></i> 3. Edge-Case Design & Error Handling</h3>
+                    <p class="text-gray-800 mb-4">By mapping out comlpex user flows and prototyping, we were able to find edge cases and potential user errors so we could give clear, human-centered feedback instead of generic errors in order to increase retention and user satisfaction.</p>
+                    <!-- Container updated: removed h-64. Used p-4 instead of p-0 for interior spacing. -->
+                    <div class="bg-red-50 p-4 rounded-lg border border-red-300 flex justify-center items-center">
+                        <!-- Image updated: added max-h-full and object-contain to ensure it scales down correctly -->
+                        <img src="../photos/Error Message.svg" 
+                             alt="Error message design for max billable hours exceeded" 
+                             class="w-full h-auto max-h-full object-contain" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x300/fee2e2/991b1b?text=Error+Message+Failed+to+Load';">
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">A clear, concise error message designed to guide users back to a successful workflow, based on real user pain points.</p>
+                </div>
 
-                <!-- 4. Authentication Flow (Figma Embed) -->
-                <div class="key-data-card">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-strategic flex items-center"><i class="fas fa-lock mr-3 text-2xl"></i> 4. Polished Authentication Flow</h3>
-                    <p class="text-gray-800 mb-4">I redesigned the entire sign-in, verification, and password recovery flow, ensuring a modern look that aligned with the new design system and providing clear visual cues for multi-factor authentication steps.</p>
-                    <div class="responsive-iframe-container border-4 border-green-500 shadow-xl">
-                        <!-- Figma Prototype Embed -->
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                            width="800" 
-                            height="450" 
-                            src="https://embed.figma.com/proto/pUKVQUQsgJB57PAEJoaFi0/Log-In-Screen-Copy?page-id=0%3A1&node-id=1-1001&viewport=501%2C444%2C0.13&scaling=contain&content-scaling=responsive&embed-host=share" allowfullscreen>
-                            
-                        </iframe>
-                    </div>
-                    <p class="text-sm text-gray-600 mt-2">Showcasing visual polish and clear steps for the initial user onboarding experience (interactive Figma prototype).</p>
-                </div>
+                <!-- 4. Authentication Flow (Figma Embed) -->
+                <div class="key-data-card">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-strategic flex items-center"><i class="fas fa-lock mr-3 text-2xl"></i> 4. Polished Authentication Flow</h3>
+                    <p class="text-gray-800 mb-4">I redesigned the entire sign-in, verification, and password recovery flow, ensuring a modern look that aligned with the new design system and providing clear visual cues for multi-factor authentication steps.</p>
+                    <div class="responsive-iframe-container border-4 border-green-500 shadow-xl">
+                        <!-- Figma Prototype Embed -->
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                            width="800" 
+                            height="450" 
+                            src="https://embed.figma.com/proto/pUKVQUQsgJB57PAEJoaFi0/Log-In-Screen-Copy?page-id=0%3A1&node-id=1-1001&viewport=501%2C444%2C0.13&scaling=contain&content-scaling=responsive&embed-host=share" allowfullscreen>
+                            
+                        </iframe>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">Showcasing visual polish and clear steps for the initial user onboarding experience (interactive Figma prototype).</p>
+                </div>
 
-            </div>
-        </section>
+            </div>
+        </section>
 
-        <!-- Outcome and Content Strategy -->
-        <section class="mb-16">
-            <h2 class="section-header">Outcome & Strategic Impact</h2>
+        <!-- Outcome and Content Strategy -->
+        <section class="mb-16">
+            <h2 class="section-header">Outcome & Strategic Impact</h2>
 
-            <!-- Summary Table -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-center">
-                <div class="p-4 bg-blue-100 rounded-lg">
-                    <p class="text-4xl font-extrabold text-blue-strategic">100%</p>
-                    <p class="text-sm text-gray-800">Adoption Increase (Internal Users)</p>
-                </div>
-                <div class="p-4 bg-blue-100 rounded-lg">
-                    <p class="text-4xl font-extrabold text-blue-strategic">20+</p>
-                    <p class="text-sm text-gray-800">Modules Redesigned/Created</p>
-                </div>
-                <div class="p-4 bg-blue-100 rounded-lg">
-                    <p class="text-4xl font-extrabold text-blue-strategic">1</p>
-                    <p class="text-sm text-gray-800">Centralized Source of Truth (Reduced data sprawl)</p>
-                </div>
-            </div>
+            <!-- Summary Table -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-center">
+                <div class="p-4 bg-blue-100 rounded-lg">
+                    <p class="text-4xl font-extrabold text-blue-strategic">100%</p>
+                    <p class="text-sm text-gray-800">Adoption Increase (Internal Users)</p>
+                </div>
+                <div class="p-4 bg-blue-100 rounded-lg">
+                    <p class="text-4xl font-extrabold text-blue-strategic">20+</p>
+                    <p class="text-sm text-gray-800">Modules Redesigned/Created</p>
+                </div>
+                <div class="p-4 bg-blue-100 rounded-lg">
+                    <p class="text-4xl font-extrabold text-blue-strategic">1</p>
+                    <p class="text-sm text-gray-800">Centralized Source of Truth (Reduced data sprawl)</p>
+                </div>
+            </div>
 
-            <div class="text-lg text-gray-800 space-y-4"> <!-- Updated text-gray-700 to text-gray-800 -->
-                <p>The redesign achieved its core goals. By making the application aesthetically superior and consistently usable, we successfully onboarded <b>all internal users</b> to critical weekly functions (Timesheets and Expense reporting), proving Vektor’s value and providing a massive, built-in feedback loop.</p>
-                
-                <h3 class="text-2xl font-bold mt-8 text-blue-strategic">Strategic Differentiator: Content & Adoption</h3>
-                <p>My role extended beyond the screen. To ensure adoption and commercial success, I created a <b>marketing and content strategy package</b> to be used across business silos. This included:</p>
-                <ul class="list-disc list-inside space-y-1 ml-4 text-gray-800">
-                    <li><b>Training Collateral:</b> (e.g., Vektor Sign-In Guide) to reduce support tickets.</li>
-                    <li><b>Sales Enablement:</b> Vektor Brochures, Digital Capabilities Decks, and Feature Tables for pitch meetings.</li>
-                    <li><b>Ad Content:</b> LinkedIn Video Ad content to support the product's external launch.</li>
-                </ul>
-                <p>Success in this environment required being a <b>strategic generalist</b>—a designer who could pivot priorities, align engineering on systems, and drive the overall commercial narrative.</p>
-            </div>
-        </section>
+            <div class="text-lg text-gray-800 space-y-4"> <!-- Updated text-gray-700 to text-gray-800 -->
+                <p>The redesign achieved its core goals. By making the application aesthetically superior and consistently usable, we successfully onboarded <b>all internal users</b> to critical weekly functions (Timesheets and Expense reporting), proving Vektor’s value and providing a massive, built-in feedback loop.</p>
+                
+                <h3 class="text-2xl font-bold mt-8 text-blue-strategic">Strategic Differentiator: Content & Adoption</h3>
+                <p>My role extended beyond the screen. To ensure adoption and commercial success, I created a <b>marketing and content strategy package</b> to be used across business silos. This included:</p>
+                <ul class="list-disc list-inside space-y-1 ml-4 text-gray-800">
+                    <li><b>Training Collateral:</b> (e.g., Vektor Sign-In Guide) to reduce support tickets.</li>
+                    <li><b>Sales Enablement:</b> Vektor Brochures, Digital Capabilities Decks, and Feature Tables for pitch meetings.</li>
+                    <li><b>Ad Content:</b> LinkedIn Video Ad content to support the product's external launch.</li>
+                </ul>
+                <p>Success in this environment required being a <b>strategic generalist</b>—a designer who could pivot priorities, align engineering on systems, and drive the overall commercial narrative.</p>
+            </div>
+        </section>
 
-        <!-- Learning -->
-        <section class="mb-16">
-            <h2 class="section-header">Learnings & Professional Growth</h2>
-            <div class="text-lg text-gray-800 space-y-4"> <!-- Updated text-gray-700 to text-gray-800 -->
-                <p>This project was a significant accelerator for my professional growth. Moving from working with a two-person development team to a larger, complex team taught me the importance of a <b>bulletproof design system</b> not just for consistency, but as a communication tool to maintain velocity across multiple developers.</p>
-                <p>My key learnings centered on the <b>business-UX relationship</b>. I gained a deep appreciation for how understanding CEO goals directly translates into prioritizing which features to build first (e.g., Timesheets for adoption over complex niche tools). Crucially, I learned that <b>system thinking</b> applies everywhere. Building solid, repeatable business processes (like expense reporting) first made it infinitely easier to translate those requirements into the app, improving the end-user experience.</p>
-                <p>Finally, I grew in <b>confidence</b>. Early on, I wish I would have been more assertive in both owning what I knew and clearly articulating what I didn't. This experience taught me to recognize the value of my unique position and expertise, making me a more effective and decisive lead designer.</p>
-            </div>
-        </section>
+        <!-- Learning -->
+        <section class="mb-16">
+            <h2 class="section-header">Learnings & Professional Growth</h2>
+            <div class="text-lg text-gray-800 space-y-4"> <!-- Updated text-gray-700 to text-gray-800 -->
+                <p>This project was a significant accelerator for my professional growth. Moving from working with a two-person development team to a larger, complex team taught me the importance of a <b>bulletproof design system</b> not just for consistency, but as a communication tool to maintain velocity across multiple developers.</p>
+                <p>My key learnings centered on the <b>business-UX relationship</b>. I gained a deep appreciation for how understanding CEO goals directly translates into prioritizing which features to build first (e.g., Timesheets for adoption over complex niche tools). Crucially, I learned that <b>system thinking</b> applies everywhere. Building solid, repeatable business processes (like expense reporting) first made it infinitely easier to translate those requirements into the app, improving the end-user experience.</p>
+                <p>Finally, I grew in <b>confidence</b>. Early on, I wish I would have been more assertive in both owning what I knew and clearly articulating what I didn't. This experience taught me to recognize the value of my unique position and expertise, making me a more effective and decisive lead designer.</p>
+            </div>
+        </section>
 
-    </main>
+    </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-200 py-6 text-center text-gray-800"> <!-- Updated text-gray-600 to text-gray-800 -->
-        <p>This case study is from my work for DynamixE, Inc.</p>
-    </footer>
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-6 text-center text-gray-800"> <!-- Updated text-gray-600 to text-gray-800 -->
+        <p>This case study is from my work for DynamixE, Inc.</p>
+    </footer>
 
 </body>
 </html>
